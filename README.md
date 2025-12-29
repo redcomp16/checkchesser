@@ -20,9 +20,11 @@ Django REST API for CheckChesser.
    cd checkchesser
 
 2. Create and activate a virtual environment:
+   Windows (PowerShell):
    python -m venv venv
-   .\venv\Scripts\Activate.ps1   # PowerShell
-   # OR on macOS/Linux
+   .\venv\Scripts\Activate.ps1
+   
+   macOS/Linux:
    source venv/bin/activate
 
 3. Install dependencies:
