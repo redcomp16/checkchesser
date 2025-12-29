@@ -15,57 +15,31 @@ Django REST API for CheckChesser.
 
 ## Setup
 
-1. **Clone the repository**
+1. Clone the repository:
 
 git clone https://github.com/redcomp16/checkchesser.git
 cd checkchesser
 
-2. **Create and activate a virtual environment**
+2. Create and activate a virtual environment:
 
 python -m venv venv
 .\venv\Scripts\Activate.ps1   # PowerShell
 # OR on macOS/Linux
 source venv/bin/activate
 
-3. **Install dependencies**
+3. Install dependencies:
 
 pip install -r requirements.txt
 
-4. **Make migrations (optional, if using the database)**
+4. Make migrations (optional, if using the database):
 
 python manage.py migrate
 
-5. **Run the development server**
+5. Run the development server:
 
 python manage.py runserver
 
-Server will run on http://localhost:8000.
-
----
-
-## Project Structure
-
-checkchesser/          ← Git repo root
-├─ .gitignore
-├─ requirements.txt
-├─ README.md
-├─ backend/            ← Django project folder
-│   ├─ manage.py
-│   ├─ backend/        ← contains settings.py, urls.py, wsgi.py, asgi.py
-│   │   ├─ __init__.py
-│   │   ├─ settings.py
-│   │   ├─ urls.py
-│   │   ├─ wsgi.py
-│   │   └─ asgi.py
-│   └─ players/        ← Django app
-│       ├─ __init__.py
-│       ├─ views.py
-│       ├─ urls.py
-│       ├─ player.py
-│       ├─ load_players.py
-│       ├─ filter_players.py
-│       ├─ uscf_service.py
-│       └─ players.csv
+Server will run on http://localhost:8000
 
 ---
 
@@ -77,15 +51,13 @@ GET /
 
 Returns a simple HTML message indicating the backend is running.
 
----
-
 ### Players
 
 GET /api/players/
 
 Returns a JSON list of players loaded from `players/players.csv`.
 
-#### Optional Query Parameters
+Optional query parameters:
 
 - `name` → filter by first or last name (starts with)  
 - `min_rating` → filter by minimum live rating  
@@ -104,7 +76,7 @@ GET /api/players/?name=Smith&min_rating=1500
 - `players.csv` must be inside the `players/` folder.  
 - Ratings are fetched live from the USCF API, which may slow down requests.  
 - For production, consider caching ratings or pre-loading them to improve performance.  
-- Make sure to use **relative imports** within the `players` app to avoid import errors:
+- Use relative imports within the `players` app to avoid import errors:
 
 from .player import Player
 from .uscf_service import USCF_Service
@@ -112,7 +84,3 @@ from .uscf_service import USCF_Service
 - Always run commands from the **repo root (`checkchesser/`)**, not inside `backend/`.
 
 ---
-
-## Author
-
-- Sohai
