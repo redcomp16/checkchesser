@@ -1,8 +1,8 @@
-from backend.players.player import Player
-from backend.players.uscf_service import USCF_Service
+from .player import Player
+from .uscf_service import USCF_Service
 import csv
 
-def Load_Players(csv_path = "players.csv"):
+def Load_Players(csv_path = "players/players.csv"):
     players = {}
 
     with open(csv_path, newline = "") as file:
@@ -16,6 +16,5 @@ def Load_Players(csv_path = "players.csv"):
             grade = row["grade"]
             uscf_id = row["uscf_id"]
             players[name] = Player(name, school, grade, uscf_id)
-            USCF_Service.update_ratings(players[name])
         
         return players

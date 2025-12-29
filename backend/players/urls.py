@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import players_list
+from .leaderboard import players
 
 urlpatterns = [
-    path("players/", players_list),
+    path("players/", players),
 ]
