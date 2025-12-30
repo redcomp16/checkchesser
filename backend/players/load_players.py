@@ -16,5 +16,6 @@ def Load_Players(csv_path = "players/players.csv"):
             grade = row["grade"]
             uscf_id = row["uscf_id"]
             players[name] = Player(name, school, grade, uscf_id)
+            USCF_Service.update_ratings(players[name])
         
         return players
