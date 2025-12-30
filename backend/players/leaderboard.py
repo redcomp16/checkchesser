@@ -14,10 +14,23 @@ PlayersByLiveRating = dict(
     )
 )
 
+PlayersByOfficialRating = dict(
+    sorted(
+        GetPlayers.items(),
+        key=lambda item: item[1].official_rating,
+        reverse=True
+    )
+)
+
 @api_view(["GET"])
 def players(request):
 
-    players = PlayersByLiveRating
+    ratingType = request.GET.get("ratingType")
+
+    if ratingType == "Official":
+        players = PlayersByOfficialRating
+    else:
+        players = PlayersByLiveRating
 
     name = request.GET.get("name")
     min_rating = request.GET.get("min_rating")
@@ -36,7 +49,7 @@ def players(request):
         school=school,
         grade=grade
     )
-    
+
     data = [
         {
             "name": p.name,
