@@ -6,6 +6,7 @@ const range1 = document.querySelector('#range1');
 const range2 = document.querySelector('#range2');
 const filterBtn = document.querySelector('.dropbtn');
 const dropdownMenu = document.querySelector('.dropdown-content');
+let ratingType = "Live";
 
 function updateRange() {
     let minVal = parseInt(minInput.value);
@@ -40,48 +41,13 @@ let officialAsc = false;
 let liveAsc = false;
 
 document.getElementById("OfficialRating").addEventListener("click", () => {
-    sortTable(4, officialAsc);
-    officialAsc = !officialAsc;
+    ratingType = "Official";
+    applyFilters();
 });
 
 document.getElementById("LiveRating").addEventListener("click", () => {
-    sortTable(5, liveAsc);
-    liveAsc = !liveAsc;
-});
-
-
-function sortTable(columnIndex, ascending) {
-    const rows = Array.from(tableBody.querySelectorAll("tr"));
-
-    rows.sort((b, a) => {
-        const aVal = parseInt(a.children[columnIndex].textContent, 10);
-        const bVal = parseInt(b.children[columnIndex].textContent, 10);
-
-        return ascending ? aVal - bVal : bVal - aVal;
-    });
-
-    tableBody.innerHTML = "";
-    rows.forEach(row => tableBody.appendChild(row));
-}
-
-function clearSortClasses() {
-    document.querySelectorAll("th").forEach(th => {
-        th.classList.remove("sort-asc", "sort-desc");
-    });
-}
-
-document.getElementById("OfficialRating").addEventListener("click", (e) => {
-    clearSortClasses();
-    sortTable(4, officialAsc);
-    e.target.classList.add(officialAsc ? "sort-desc" : "sort-asc");
-    officialAsc = !officialAsc;
-});
-
-document.getElementById("LiveRating").addEventListener("click", (e) => {
-    clearSortClasses();
-    sortTable(5, liveAsc);
-    e.target.classList.add(liveAsc ? "sort-desc" : "sort-asc");
-    liveAsc = !liveAsc;
+    ratingType = "Live";
+    applyFilters();
 });
 
 async function loadPlayers(filters = {}) {
@@ -97,6 +63,7 @@ async function loadPlayers(filters = {}) {
 
 
 async function renderLeaderboard(playerData) {
+    console.log(playerData)
     const tableBody = document.getElementById('leaderboard-body');
     tableBody.innerHTML = '';
 
@@ -113,9 +80,9 @@ async function renderLeaderboard(playerData) {
         `;
 
         row.style.cursor = "pointer";
-       row.addEventListener("click", () => {
-        window.open(`https://ratings.uschess.org/player/${player.uscf_id}`, "_blank", "noopener,noreferrer");
-       });
+        row.addEventListener("click", () => {
+            window.open(`https://ratings.uschess.org/player/${player.uscf_id}`, "_blank", "noopener,noreferrer");
+        });
 
         tableBody.appendChild(row);
 
@@ -168,6 +135,7 @@ function getFilters() {
 
     filters.school = FilteringSchools;
     filters.grade = FilteringGrades;
+    filters.ratingType = ratingType;
     console.log(FilteringGrades);
     console.log(FilteringSchools);
 
