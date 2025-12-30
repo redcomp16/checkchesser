@@ -27,7 +27,6 @@ class USCF_Service:
     
     @classmethod
     def update_live_rating(cls, player: Player):
-        time.sleep(0.5)
         data = cls.get(player.history_link).json()
         ratings = [r for section in data["items"] for r in section["ratingRecords"]]
         most_recent = sorted(ratings, key = lambda r: r.get("event", {}).get("date", ""), reverse = True)[0]
