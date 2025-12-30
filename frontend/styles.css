@@ -6,6 +6,7 @@ html, body {
     color: #333;
 }
 
+/* Header */
 .site-header {
     background-color: #71816D;
     color: white;
@@ -15,15 +16,15 @@ html, body {
 
 .site-header h1 {
     margin: 0;
-    margin-left: -20px;
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
 
+/* Container */
 .leaderboard-container {
     max-width: 1000px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 h2 {
@@ -33,20 +34,174 @@ h2 {
     text-align: center;
 }
 
+/* Search and Dropdown Button */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    flex: 1;
+    max-width: 400px;
+    padding: 14px 20px;
+    background-color: #F1E0C5;
+    border: 2px solid #71816D;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+#searchBar:focus {
+    background-color: #ffedd0;
+    box-shadow: 0 4px 12px rgba(113, 129, 109, 0.2);
+}
+
+.dropbtn {
+    background-color: #71816D;
+    color: white;
+    padding: 14px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropbtn:hover { background-color: #5a6657; }
+.dropdown-content {
+    background-color: #F1E0C5;
+    border: 2px solid #71816D;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+    padding: 0 20px; 
+}
+
+.dropdown-content.show {
+    max-height: 800px;
+    opacity: 1;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Filter Sections */
+.filter-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(113, 129, 109, 0.2);
+}
+
+.filter-section:last-child { border-bottom: none; }
+
+.filter-label {
+    display: block;
+    font-weight: bold;
+    color: #4a5448;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* Checkbox Grid */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+}
+
+.SchoolCheck {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.SchoolCheck input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #71816D;
+    cursor: pointer;
+}
+
+/* Range Sliders */
+#rating-container {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.values {
+    text-align: center;
+    font-weight: bold;
+    color: #71816D;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+
+.slider-wrapper {
+    position: relative;
+    width: 100%; 
+    height: 8px;
+    background: #C9B79C;
+    border-radius: 5px;
+}
+
+input[type="range"] {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    pointer-events: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #71816D;
+    cursor: pointer;
+    pointer-events: auto;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 3;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #71816D;
+    cursor: pointer;
+    pointer-events: auto;
+    border: 2px solid #F1E0C5;
+}
 .leaderboard {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 8px; 
+    border-spacing: 0 8px;
 }
 
 .leaderboard thead th {
     background-color: #71816D;
     color: white;
     padding: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
     font-size: 0.85rem;
-    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .leaderboard thead th:first-child { border-radius: 8px 0 0 0; }
@@ -55,237 +210,31 @@ h2 {
 .leaderboard td {
     padding: 16px;
     background-color: #F1E0C5;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.leaderboard tbody {
-    overflow-y: auto
-}
-
-.Player {
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: default;
     text-align: center;
 }
 
+.Player:hover td {
+    background-color: #ffedd0;
+}
+
+.Player td:first-child { 
+    border-radius: 8px 0 0 8px;
+    font-weight: bold;
+    color: #71816D;
+}
+
 .Player:hover {
+
     transform: scale(1.01);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     z-index: 10;
 }
 
-.Player:hover td{
-    background-color: #ffedd0;
-}
-
-.Player td:first-child { 
-    border-left: 1px solid rgba(0,0,0,0.05);
-    border-radius: 8px 0 0 8px; 
-    font-weight: bold;
-    color: #71816D;
-}
-
-.Player td:last-child { 
-    border-right: 1px solid rgba(0,0,0,0.05);
-    border-radius: 0 8px 8px 0; 
+.Player {
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
 }
 
 
 
-#searchBar {
-    width: 100%;
-    max-width: 400px; 
-    padding: 14px 20px;    
-    display: block; 
-    margin: 20px auto;
-
-    background-color: #F1E0C5;
-    border: 2px solid #71816D;
-    border-radius: 25px; 
- 
-    font-size: 16px;
-    font-family: inherit;
-    color: #4a5448;
-    outline: none;
-
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-#searchBar:focus {
-    box-shadow: 0 6px 12px rgba(113, 129, 109, 0.2);
-    border-color: #5a6657;
-    background-color: #ffedd0;
-    transform: translateY(-1px); 
-
-}
-
-#searchBar::placeholder {
-    color: #998c79;
-}
-
-.search-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 10px; 
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-#searchBar {
-    flex: 1; 
-    max-width: 400px;
-    margin: 0; 
-    padding: 14px 20px;
-    background-color: #F1E0C5;
-    border: 2px solid #71816D;
-    border-radius: 25px;
-    font-size: 16px;
-    outline: none;
-}
-
-.dropbtn {
-    background-color: #71816D;
-    color: white;
-    padding: 14px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-.dropbtn:hover {
-    background-color: #5a6657;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: flex; 
-    flex-direction: column;
-    background-color: #F1E0C5;
-    border: 2px solid #71816D;
-    border-radius: 20px;
-    margin: auto;
-
-    overflow: hidden;       
-    max-height: 0;           
-    opacity: 0;             
-    transition: max-height 0.4s ease-out, opacity 0.3s ease;
-    
-    width: 50%;
-    height: 500px;
-
-    margin-bottom: 10px;
-}
-
-.dropdown-content.show {
-    max-height: 300px;      
-    opacity: 1;
- 
-}
-
-.dropdown-content div {
-    font-weight: bold;
-    color: #71816D;
-    padding: 5px 10px;
-    text-decoration: none;
-    display: block;
-    
-}
-
-#rating-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-#rating-container p {
-    font-weight: normal;
-    margin: 0; 
-    text-align: center; 
-    color: black;
-}
-
-.slider-wrapper {
-    position: relative;
-    margin-left: -50px;
-    width: 90%;
-    height: 10px;
-    border-radius: 5px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    pointer-events: auto;
-    -webkit-appearance: none;
-    width: 18px;
-    height: 18px;
-    background: #71816D;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    accent-color: #71816D;
-    cursor: pointer;
-    background: #C9B79C;
-    border-radius: 50px;
-    border: 2px solid #71816D;
-    position: absolute;
-    width: 100%;
-    pointer-events: none; 
-    appearance: none;
-    background: none;
-}
-
-option {
-    max-width: 400px;
-    margin: 0; 
-    padding: 14px 20px;
-    background-color: #F1E0C5;
-    border: 2px solid #71816D;
-    border-radius: 25px;
-    font-size: 16px;
-    outline: none;
-}
-
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin: auto;
-    accent-color: #71816D;
-    cursor: pointer;
-    background: #C9B79C;
-    border-radius: 5px;
-    border: 2px solid #71816D;
-}
-
-#school-scontainer {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap; 
-
-    width: 100%;
-    height: auto;  
-    padding: 10px 0;
-}
-
-.SchoolCheck {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    width: auto;
-}
-
-.SchoolCheck label {
-    font-size: 17.5px;
-}
-
+.Player td:last-child { border-radius: 0 8px 8px 0; }

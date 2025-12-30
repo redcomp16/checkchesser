@@ -3,131 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page with Header</title>
+    <title>CheckChesser Leaderboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header class="site-header">
         <h1>CheckChesser</h1>
     </header>
 
-  <main class="leaderboard-container">
-    <h2>Leaderboard</h2>
-   <div class="controls-container">
-     <div class="search-wrapper">
-        <input type="text" id="searchBar" placeholder="Search name">
-            <div class="dropdown">
-                <button class="dropbtn" >Filters▾</button>
+    <main class="leaderboard-container">
+        <h2>Leaderboard</h2>
+        
+        <div class="controls-container">
+            <div class="search-wrapper">
+                <input type="text" id="searchBar" placeholder="Search name">
+                <div class="dropdown">
+                    <button class="dropbtn">Filters ▾</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="dropdown-content">
-        <div>
-            Rating
-            <div id="rating-container">
-                <div class="values">
+
+        <div class="dropdown-content" id="filterDropdown">
+                <div class="filter-section">
+                    <span class="filter-label">Rating Range</span>
+                    <div id="rating-container">
+                    <div class="values">
                     <span id="range1">0</span> - <span id="range2">2500</span>
                 </div>    
-                <div class="slider-wrapper">
-                    <input id="rating-slider1" type="range" class="min-input" min="0" max="2500" value="0" step="50">
-                    <input id="rating-slider2" type="range" class="max-input" min="0" max="2500" value="2500" step="50">
+                <div class="slider-wrapper" id="slider-track">
+                    <input id="rating-slider1" type="range" min="0" max="2500" value="0" step="50">
+                    <input id="rating-slider2" type="range" min="0" max="2500" value="2500" step="50">
                 </div>
             </div>
         </div>
-        <div>
-            School
-             <div id="school-scontainer">
-                <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Masterman HS</label>
-                </div>
 
-                <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Central HS</label>
+            <div class="filter-section">
+                <span class="filter-label">Schools</span>
+                <div class="checkbox-grid">
+                    <div class="SchoolCheck"><input type="checkbox" id="masterman"><label for="masterman">Masterman HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="central"><label for="central">Central HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="northeast"><label for="northeast">Northeast HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="palumbo"><label for="palumbo">Palumbo HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="lincoln"><label for="lincoln">Lincoln HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="carver"><label for="carver">Carver HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="new-foundations"><label for="new-foundations">New Foundations HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="sla"><label for="sla">SLA HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="mastbaum"><label for="mastbaum">Mastbaum HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="bodine"><label for="bodine">Bodine HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="boys-latin"><label for="boys-latin">Boy's Latin HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="swenson"><label for="swenson">Swenson HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="washington"><label for="washington">Washington HS</label></div>
                 </div>
+            </div>
 
-                <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Northeast HS</label>
+            <div class="filter-section">
+                <span class="filter-label">Grade</span>
+                <div class="checkbox-grid">
+                    <div class="SchoolCheck"><input type="checkbox" id="g9"><label for="g9">9th</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="g10"><label for="g10">10th</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="g11"><label for="g11">11th</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="g12"><label for="g12">12th</label></div>
                 </div>
-
-                <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Palumbo HS</label>
-                </div>
-
-                <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Lincoln HS</label>
-                </div>
-
-                <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Carver HS</label>
-                </div>
-
-                 <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Swenson HS</label>
-                </div>
-
-                 <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>New Foundations HS</label>
-                </div>
-
-                 <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Mastbaum HS</label>
-                </div>
-
-                 <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>SLA HS</label>
-                </div>
-
-                 <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Bodine HS</label>
-                </div>
-
-                 <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>Boy's Latin HS</label>
-                </div>
-
-                 <div class="SchoolCheck">
-                    <input type="checkbox">
-                    <label>George Washington HS</label>
-                </div>
-
             </div>
         </div>
-        <div>Grade</div>
 
-    </div>
-    <table class="leaderboard">
-        <thead>
-            <tr>
-                <th>Rank</th>
-                <th>Name</th>
-                <th>School</th>
-                <th>Grade</th>
-                <th>Rating</th>
-                <th>Live Rating</th>
-            </tr>
-        </thead>
-        
-        <tbody id="leaderboard-body">
-            
-        </tbody>
-    </table>
-</main>
-    <script src="Test.js"></script>
+        <table class="leaderboard">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>School</th>
+                    <th>Grade</th>
+                    <th>Rating</th>
+                    <th>Live Rating</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <tr class="Player">
+                    <td>1</td>
+                    <td>Kirby Kobe Lin</td>
+                    <td>Central Highschool</td>
+                    <td>11</td>
+                    <td>2000</td>
+                    <td>2000</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
