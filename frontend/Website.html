@@ -46,23 +46,22 @@
                     <div class="SchoolCheck"><input type="checkbox" id="palumbo"><label for="palumbo">Palumbo HS</label></div>
                     <div class="SchoolCheck"><input type="checkbox" id="lincoln"><label for="lincoln">Lincoln HS</label></div>
                     <div class="SchoolCheck"><input type="checkbox" id="carver"><label for="carver">Carver HS</label></div>
-                    <div class="SchoolCheck"><input type="checkbox" id="new-foundations"><label for="new-foundations">New Foundations HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="new foundations"><label for="new foundations">New Foundations HS</label></div>
                     <div class="SchoolCheck"><input type="checkbox" id="sla"><label for="sla">SLA HS</label></div>
                     <div class="SchoolCheck"><input type="checkbox" id="mastbaum"><label for="mastbaum">Mastbaum HS</label></div>
                     <div class="SchoolCheck"><input type="checkbox" id="bodine"><label for="bodine">Bodine HS</label></div>
-                    <div class="SchoolCheck"><input type="checkbox" id="boys-latin"><label for="boys-latin">Boy's Latin HS</label></div>
                     <div class="SchoolCheck"><input type="checkbox" id="swenson"><label for="swenson">Swenson HS</label></div>
-                    <div class="SchoolCheck"><input type="checkbox" id="washington"><label for="washington">Washington HS</label></div>
+                    <div class="SchoolCheck"><input type="checkbox" id="george washington"><label for="george washington">Washington HS</label></div>
                 </div>
             </div>
 
             <div class="filter-section">
                 <span class="filter-label">Grade</span>
                 <div class="checkbox-grid">
-                    <div class="SchoolCheck"><input type="checkbox" id="g9"><label for="g9">9th</label></div>
-                    <div class="SchoolCheck"><input type="checkbox" id="g10"><label for="g10">10th</label></div>
-                    <div class="SchoolCheck"><input type="checkbox" id="g11"><label for="g11">11th</label></div>
-                    <div class="SchoolCheck"><input type="checkbox" id="g12"><label for="g12">12th</label></div>
+                    <div class="GradeCheck"><input type="checkbox" id="g9"><label for="g9">9th</label></div>
+                    <div class="GradeCheck"><input type="checkbox" id="g10"><label for="g10">10th</label></div>
+                    <div class="GradeCheck"><input type="checkbox" id="g11"><label for="g11">11th</label></div>
+                    <div class="GradeCheck"><input type="checkbox" id="g12"><label for="g12">12th</label></div>
                 </div>
             </div>
         </div>
@@ -74,8 +73,8 @@
                     <th>Name</th>
                     <th>School</th>
                     <th>Grade</th>
-                    <th>Rating</th>
-                    <th>Live Rating</th>
+                    <th data-sort="Official" id="OfficialRating" class="RatingSort">Official Rating ▾</th>
+                    <th data-sort="Live" id="LiveRating" class="RatingSort">Live Rating ▾</th>
                 </tr>
             </thead>
             <tbody id="leaderboard-body">

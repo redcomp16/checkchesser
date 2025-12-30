@@ -6,10 +6,18 @@ from .filter_players import Filter_Players
 
 GetPlayers = Load_Players()
 
+PlayersByLiveRating = dict(
+    sorted(
+        GetPlayers.items(),
+        key=lambda item: item[1].live_rating,
+        reverse=True
+    )
+)
+
 @api_view(["GET"])
 def players(request):
 
-    players = GetPlayers
+    players = PlayersByLiveRating
 
     name = request.GET.get("name")
     min_rating = request.GET.get("min_rating")

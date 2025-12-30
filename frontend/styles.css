@@ -122,9 +122,24 @@ h2 {
     align-items: center;
     gap: 8px;
     cursor: pointer;
+   
 }
 
 .SchoolCheck input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #71816D;
+    cursor: pointer;
+}
+
+.GradeCheck {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.GradeCheck input[type="checkbox"] {
     width: 18px;
     height: 18px;
     accent-color: #71816D;
@@ -202,7 +217,11 @@ input[type="range"]::-moz-range-thumb {
     padding: 15px;
     font-size: 0.85rem;
     text-transform: uppercase;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    
 }
+
+
 
 .leaderboard thead th:first-child { border-radius: 8px 0 0 0; }
 .leaderboard thead th:last-child { border-radius: 0 8px 0 0; }
@@ -236,5 +255,14 @@ input[type="range"]::-moz-range-thumb {
 }
 
 
-
 .Player td:last-child { border-radius: 0 8px 8px 0; }
+
+.RatingSort {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.RatingSort:hover {
+    transition-property: all;
+    background-color: #5a6657;
+}

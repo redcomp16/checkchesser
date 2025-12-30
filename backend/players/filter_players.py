@@ -12,9 +12,9 @@ def Filter_Players(players, *, name = None, min_rating = None, max_rating = None
         results = [p for p in results if p.live_rating is not None and p.live_rating <= max_rating]
 
     if school:
-        results = [p for p in results if p.school == school]
+        results = [p for p in results if p.school.lower() in school]
 
     if grade:
-        results = [p for p in results if p.grade == grade]
+        results = [p for p in results if p.grade in grade]
 
     return list(results)

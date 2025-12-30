@@ -34,6 +34,55 @@ function updateRange() {
 }
 
 
+const tableBody = document.getElementById("leaderboard-body");
+
+let officialAsc = false;
+let liveAsc = false;
+
+document.getElementById("OfficialRating").addEventListener("click", () => {
+    sortTable(4, officialAsc);
+    officialAsc = !officialAsc;
+});
+
+document.getElementById("LiveRating").addEventListener("click", () => {
+    sortTable(5, liveAsc);
+    liveAsc = !liveAsc;
+});
+
+
+function sortTable(columnIndex, ascending) {
+    const rows = Array.from(tableBody.querySelectorAll("tr"));
+
+    rows.sort((b, a) => {
+        const aVal = parseInt(a.children[columnIndex].textContent, 10);
+        const bVal = parseInt(b.children[columnIndex].textContent, 10);
+
+        return ascending ? aVal - bVal : bVal - aVal;
+    });
+
+    tableBody.innerHTML = "";
+    rows.forEach(row => tableBody.appendChild(row));
+}
+
+function clearSortClasses() {
+    document.querySelectorAll("th").forEach(th => {
+        th.classList.remove("sort-asc", "sort-desc");
+    });
+}
+
+document.getElementById("OfficialRating").addEventListener("click", (e) => {
+    clearSortClasses();
+    sortTable(4, officialAsc);
+    e.target.classList.add(officialAsc ? "sort-desc" : "sort-asc");
+    officialAsc = !officialAsc;
+});
+
+document.getElementById("LiveRating").addEventListener("click", (e) => {
+    clearSortClasses();
+    sortTable(5, liveAsc);
+    e.target.classList.add(liveAsc ? "sort-desc" : "sort-asc");
+    liveAsc = !liveAsc;
+});
 
 async function loadPlayers(filters = {}) {
     const params = new URLSearchParams(filters);
@@ -44,9 +93,6 @@ async function loadPlayers(filters = {}) {
     }
     const data = await response.json();
     renderLeaderboard(data);
-
-
-
 }
 
 
@@ -66,6 +112,11 @@ async function renderLeaderboard(playerData) {
             <td>${player.live_rating}</td>
         `;
 
+        row.style.cursor = "pointer";
+        row.addEventListener("click", () => {
+            window.location.href = `https://ratings.uschess.org/player/${player.uscf_id}`;
+        });
+
         tableBody.appendChild(row);
 
     });
@@ -76,7 +127,8 @@ async function renderLeaderboard(playerData) {
 
 function getFilters() {
     const filters = {};
-
+    const FilteringGrades = [];
+    const FilteringSchools = [];
     const searchValue = document.getElementById('searchBar').value.trim();
     if (searchValue !== '') {
         filters.name = searchValue;
@@ -98,23 +150,26 @@ function getFilters() {
         '.SchoolCheck input[type="checkbox"]'
     );
 
+    const gradeCheckboxes = document.querySelectorAll(
+        '.GradeCheck input[type="checkbox"]'
+    );
+
     for (const cb of schoolCheckboxes) {
         if (cb.checked) {
-            filters.school = cb.nextElementSibling.textContent;
-            break;
+            FilteringSchools.push(cb.id);
         }
     }
-
-    const gradeCheckboxes = document.querySelectorAll(
-        '#g9, #g10, #g11, #g12'
-    );
 
     for (const cb of gradeCheckboxes) {
         if (cb.checked) {
-            filters.grade = cb.id.replace('g', '');
-            break;
+            FilteringGrades.push(cb.id.replace('g', ''));
         }
     }
+
+    filters.school = FilteringSchools;
+    filters.grade = FilteringGrades;
+    console.log(FilteringGrades);
+    console.log(FilteringSchools);
 
     return filters;
 }
