@@ -30,27 +30,39 @@ filterBtn.addEventListener('click', () => {
 minInput.addEventListener('input', updateRange);
 maxInput.addEventListener('input', updateRange);
 
+async function loadPlayers(filters = {}) {
+    const params = new URLSearchParams(filters);
+    const response = await fetch(`http://127.0.0.1:8000/api/players/?${params}`);
 
+    if (!response.ok) {
+        console.error("Failed to fetch players");
+        return;
+    }
 
-function renderLeaderboard(playerData) {
+    const data = await response.json();
+    renderLeaderboard(data);
+}
+
+async function renderLeaderboard(playerData) {
     const tableBody = document.getElementById('leaderboard-body');
     tableBody.innerHTML = '';
 
-    playerData.forEach(player => {
+    playerData.forEach((player, index) => {
         const row = document.createElement('tr');
         row.classList.add('Player');
 
         row.innerHTML = `
-            <td>${player.rank}</td>
+            <td>${index + 1}</td>
             <td>${player.name}</td>
             <td>${player.school}</td>
             <td>${player.grade}</td>
-            <td>${player.rating}</td>
-            <td>${player.liveRating}</td>
+            <td>${player.official_rating}</td>
+            <td>${player.live_rating}</td>
+            <td>${player.delta_live_rating}</td>
         `;
 
         tableBody.appendChild(row);
     });
 }
 
-renderLeaderboard(players);
+loadPlayers();
