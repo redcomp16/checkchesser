@@ -4,10 +4,12 @@ from rest_framework.response import Response
 from .load_players import Load_Players
 from .filter_players import Filter_Players
 
+GetPlayers = Load_Players()
+
 @api_view(["GET"])
 def players(request):
 
-    players = Load_Players()
+    players = GetPlayers
 
     name = request.GET.get("name")
     min_rating = request.GET.get("min_rating")
