@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Header</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>CheckChesser</h1>
+    </header>
+
+  <main class="leaderboard-container">
+    <h2>Leaderboard</h2>
+   <div class="controls-container">
+     <div class="search-wrapper">
+        <input type="text" id="searchBar" placeholder="Search name">
+            <div class="dropdown">
+                <button class="dropbtn" >Filters▾</button>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown-content">
+        <div>
+            Rating
+            <div id="rating-container">
+                <div class="values">
+                    <span id="range1">0</span> - <span id="range2">2500</span>
+                </div>    
+                <div class="slider-wrapper">
+                    <input id="rating-slider1" type="range" class="min-input" min="0" max="2500" value="0" step="50">
+                    <input id="rating-slider2" type="range" class="max-input" min="0" max="2500" value="2500" step="50">
+                </div>
+            </div>
+        </div>
+        <div>
+            School
+             <div id="school-scontainer">
+                <div class="SchoolCheck">
+                    <input type="checkbox">
+                    <label>Masterman</label>
+                </div>
+
+                <div class="SchoolCheck">
+                    <input type="checkbox">
+                    <label>Central</label>
+                </div>
+
+                <div class="SchoolCheck">
+                    <input type="checkbox">
+                    <label>Northeast</label>
+                </div>
+
+                <div class="SchoolCheck">
+                    <input type="checkbox">
+                    <label>Palumbo</label>
+                </div>
+
+                <div class="SchoolCheck">
+                    <input type="checkbox">
+                    <label>Lincoln</label>
+                </div>
+
+                <div class="SchoolCheck">
+                    <input type="checkbox">
+                    <label>Carver</label>
+                </div>
+
+
+            </div>
+        </div>
+        <div>Grade</div>
+
+    </div>
+    <table class="leaderboard">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>School</th>
+                <th>Grade</th>
+                <th>Rating</th>
+                <th>Live Rating</th>
+            </tr>
+        </thead>
+
+
+
+        <tbody id="leaderboard-body">
+
+            <tr class = "Player">
+
+                <td>1</td>
+                <td>Kirby Kobe Lin</td>
+                <td>Central Highschool</td>
+                <td>11</td>
+                <td>2000</td>
+                <td>2000</td>
+            </tr>
+            <tr class = "Player">
+                <td>2</td>
+                <td>Calvin Wang</td>
+                <td>Central Highschool</td>
+                <td>11</td>
+                <td>1800</td>
+                <td>1800</td>
+            </tr>
+
+        </tbody>
+    </table>
+</main>
+    <script src="Test.js"></script>
+</body>
+</html>
