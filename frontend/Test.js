@@ -29,21 +29,11 @@ filterBtn.addEventListener('click', () => {
 
 minInput.addEventListener('input', updateRange);
 maxInput.addEventListener('input', updateRange);
-
+    
 async function loadPlayers(filters = {}) {
     const params = new URLSearchParams(filters);
     const response = await fetch(`http://127.0.0.1:8000/api/players/?${params}`);
 
-    if (!response.ok) {
-        console.error("Failed to fetch players");
-        return;
-    }
-
-    const data = await response.json();
-    renderLeaderboard(data);
-}
-
-async function renderLeaderboard(playerData) {
     const tableBody = document.getElementById('leaderboard-body');
     tableBody.innerHTML = '';
 
@@ -63,6 +53,7 @@ async function renderLeaderboard(playerData) {
 
         tableBody.appendChild(row);
     });
+
 }
 
 loadPlayers();
