@@ -113,9 +113,9 @@ async function renderLeaderboard(playerData) {
         `;
 
         row.style.cursor = "pointer";
-        row.addEventListener("click", () => {
-            window.location.href = `https://ratings.uschess.org/player/${player.uscf_id}`;
-        });
+       row.addEventListener("click", () => {
+        window.open(`https://ratings.uschess.org/player/${player.uscf_id}`, "_blank", "noopener,noreferrer");
+       });
 
         tableBody.appendChild(row);
 
