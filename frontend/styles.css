@@ -266,3 +266,32 @@ input[type="range"]::-moz-range-thumb {
     transition-property: all;
     background-color: #5a6657;
 }
+
+.dropbtn.active {
+    background-color: #5a6657;
+}
+
+.RatingSort.active {
+    background-color: #5a6657;
+}
+
+.live-rating {
+    white-space: nowrap;
+}
+
+.delta {
+    margin-left: 6px;
+    font-size: 0.85em;
+}
+
+.delta-up {
+    color: #2ecc71; /* green */
+}
+
+.delta-down {
+    color: #e74c3c; /* red */
+}
+
+.delta-neutral {
+    color: #999;
+}
