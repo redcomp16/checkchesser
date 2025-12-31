@@ -8,6 +8,10 @@ const filterBtn = document.querySelector('.dropbtn');
 const dropdownMenu = document.querySelector('.dropdown-content');
 let ratingType = "Live";
 
+const PAGE_SIZE = 25;
+let currentPage = 1;
+let currentData = [];
+
 function updateRange() {
     let minVal = parseInt(minInput.value);
     let maxVal = parseInt(maxInput.value);
@@ -75,14 +79,30 @@ async function loadPlayers(filters = {}) {
     renderLeaderboard(data);
 }
 
+async function loadPlayers(filters = {}) {
+    const params = new URLSearchParams(filters);
+    const response = await fetch(`http://127.0.0.1:8000/api/players/?${params}`);
 
-async function renderLeaderboard(playerData) {
-    console.log(playerData)
+    if (!response.ok) {
+        console.error("Failed to fetch players");
+        return;
+    }
+
+    currentData = await response.json();
+    currentPage = 1;
+    renderPage();
+    renderPaginationControls();
+}
+
+function renderPage() {
     const tableBody = document.getElementById('leaderboard-body');
     tableBody.innerHTML = '';
 
-    playerData.forEach((player, index) => {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = start + PAGE_SIZE;
+    const pageData = currentData.slice(start, end);
 
+    pageData.forEach((player, index) => {
         const delta = player.delta_live_rating ?? 0;
         const deltaClass = delta > 0 ? "delta-up" : delta < 0 ? "delta-down" : "delta-neutral";
         const arrow = delta > 0 ? "▲" : delta < 0 ? "▼" : "";
@@ -90,29 +110,67 @@ async function renderLeaderboard(playerData) {
         const row = document.createElement('tr');
         row.classList.add('Player');
         row.innerHTML = `
-            <td>${index + 1}</td>
+            <td>${start + index + 1}</td>
             <td>${player.name}</td>
-            <td>${player.school}</td>
+            <td>${player.school} HS</td>
             <td>${player.grade}</td>
             <td>${player.official_rating}</td>
             <td class="live-rating">
                 ${player.live_rating}
                 <span class="delta ${deltaClass}">
-                    ${arrow}${Math.abs(player.delta_live_rating)}
+                    ${arrow}${Math.abs(delta)}
                 </span>
             </td>
         `;
 
         row.style.cursor = "pointer";
         row.addEventListener("click", () => {
-            window.open(`https://ratings.uschess.org/player/${player.uscf_id}`, "_blank", "noopener,noreferrer");
+            window.open(
+                `https://ratings.uschess.org/player/${player.uscf_id}`,
+                "_blank",
+                "noopener,noreferrer"
+            );
         });
 
         tableBody.appendChild(row);
-
     });
-
 }
+
+function renderPaginationControls() {
+    const totalPages = Math.ceil(currentData.length / PAGE_SIZE);
+    const pageInfo = document.getElementById("pageInfo");
+
+    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+
+    document.getElementById("prevPage").disabled = currentPage === 1;
+    document.getElementById("nextPage").disabled = currentPage === totalPages;
+}
+
+function scrollTableToTop() {
+    const table = document.querySelector('.leaderboard-table') 
+        || document.querySelector('table');
+
+    table.scrollIntoView({ behavior: "instant", block: "start" });
+}
+
+document.getElementById("prevPage").addEventListener("click", () => {
+    if (currentPage > 1) {
+        currentPage--;
+        renderPage();
+        renderPaginationControls();
+        scrollTableToTop();
+    }
+});
+
+document.getElementById("nextPage").addEventListener("click", () => {
+    const totalPages = Math.ceil(currentData.length / PAGE_SIZE);
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderPage();
+        renderPaginationControls();
+        scrollTableToTop();
+    }
+});
 
 /*            <td>${player.delta_live_rating}</td> */
 
