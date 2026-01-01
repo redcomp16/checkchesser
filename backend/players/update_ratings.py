@@ -1,0 +1,36 @@
+import csv
+import sys
+import os
+
+sys.path.append(os.path.join(os.getcwd(), 'backend'))
+
+from players.load_players import Load_Players
+from players.uscf_service import USCF_Service
+
+def update_ratings():
+    csv_path = "backend/players/players.csv"
+    players = Load_Players(csv_path)
+
+    for name, player in players.items():
+        print(f"Updating {name}...")
+        USCF_Service.update_ratings(player)
+
+    fieldnames = ["first_name", "last_name", "school", "grade", "uscf_id", "official_rating", "live_rating", "delta_live_rating"]
+    with open(csv_path, 'w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for p in players.values():
+            name_parts = p.name.split(" ", 1)
+            writer.writerow({
+                "first_name": name_parts[0],
+                "last_name": name_parts[1] if len(name_parts) > 1 else "",
+                "school": p.school,
+                "grade": p.grade,
+                "uscf_id": p.uscf_id,
+                "official_rating": p.official_rating,
+                "live_rating": p.live_rating,
+                "delta_live_rating": getattr(p, 'delta_live_rating', 0)
+            })
+
+if __name__ == "__main__":
+    update_ratings()
