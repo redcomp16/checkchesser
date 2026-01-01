@@ -19,7 +19,7 @@ jobs:
         run: pip install requests django djangorestframework beautifulsoup4
 
       - name: Run update script
-        run: python update_ratings.py
+        run: python backend/players/update_ratings.py
         env:
           DJANGO_SETTINGS_MODULE: backend.settings
 
