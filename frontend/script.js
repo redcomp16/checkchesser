@@ -54,6 +54,10 @@ document.getElementById("LiveRating").addEventListener("click", () => {
     applyFilters();
 });
 
+function isMobile() {
+    return window.innerWidth <= 900; 
+}
+
 const ratingHeaders = document.querySelectorAll(".RatingSort");
 
 ratingHeaders.forEach(header => {
@@ -101,6 +105,7 @@ function renderPage() {
     const start = (currentPage - 1) * PAGE_SIZE;
     const end = start + PAGE_SIZE;
     const pageData = currentData.slice(start, end);
+    const mobile = isMobile();
 
     pageData.forEach((player, index) => {
         const delta = player.delta_live_rating ?? 0;
@@ -109,7 +114,22 @@ function renderPage() {
 
         const row = document.createElement('tr');
         row.classList.add('Player');
-        row.innerHTML = `
+        if (mobile) {
+            row.innerHTML = `
+            <td>${start + index + 1}</td>
+            <td>${player.name}</td>
+            <td>${player.school}</td>
+            <td>${player.grade}</td>
+            <td>${player.official_rating}</td>
+            <td class="live-rating">
+                ${player.live_rating}
+                <span class="delta ${deltaClass}">
+                    ${arrow}${Math.abs(delta)}
+                </span>
+            </td>
+        `;
+        }  else {
+             row.innerHTML = `
             <td>${start + index + 1}</td>
             <td>${player.name}</td>
             <td>${player.school} HS</td>
@@ -122,6 +142,9 @@ function renderPage() {
                 </span>
             </td>
         `;
+        }
+
+       
 
         row.style.cursor = "pointer";
         row.addEventListener("click", () => {
