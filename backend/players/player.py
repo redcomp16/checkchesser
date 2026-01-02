@@ -1,14 +1,14 @@
 class Player:
-    def __init__(self, name, school, grade, uscf_id):
+    def __init__(self, name, school, grade, uscf_id, official_rating, live_rating, delta_live_rating):
         self.name = name
         self.school = school
         self.grade = grade
         self.uscf_id = uscf_id
+        self.official_rating = official_rating
+        self.live_rating = live_rating
+        self.delta_live_rating = delta_live_rating
         self.main_link = self.get_main_link()
         self.history_link = self.get_history_link()
-        self.official_rating = None
-        self.live_rating = None
-        self.delta_live_rating = None
 
     def get_main_link(self):
         main_link = f"https://ratings-api.uschess.org/api/v1/members/{self.uscf_id}"

@@ -9,7 +9,7 @@ GetPlayers = Load_Players()
 PlayersByLiveRating = dict(
     sorted(
         GetPlayers.items(),
-        key=lambda item: item[1].live_rating,
+        key=lambda item: item[1].live_rating if item[1].live_rating is not None else 0,
         reverse=True
     )
 )
@@ -17,7 +17,7 @@ PlayersByLiveRating = dict(
 PlayersByOfficialRating = dict(
     sorted(
         GetPlayers.items(),
-        key=lambda item: item[1].official_rating,
+        key=lambda item: item[1].official_rating if item[1].official_rating is not None else 0,
         reverse=True
     )
 )
