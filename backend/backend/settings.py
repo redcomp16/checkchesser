@@ -62,6 +62,8 @@ CORS_ALLOWED_ORIGINS = [
     "https://redcomp16.github.io"
     "https://www.checkchesser.com",
     "https://checkchesser.com",
+    "http://www.checkchesser.com",
+    "http://checkchesser.com",
 ]
 
 TEMPLATES = [
