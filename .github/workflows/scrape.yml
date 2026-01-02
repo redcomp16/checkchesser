@@ -1,32 +1,33 @@
 name: daily-update
 on:
   schedule:
-    - cron: '0 0 * * *'  
-  workflow_dispatch:      
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   scrape-job:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write    
+    permissions: { contents: write }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+        with: { python-version: '3.11' }
       
       - name: Install dependencies
-        run: pip install requests django djangorestframework beautifulsoup4
+        run: pip install requests django djangorestframework
 
-      - name: Run update script
-        run: python backend/players/update_ratings.py
-        env:
-          DJANGO_SETTINGS_MODULE: backend.settings
+      - name: Scrape Ratings
+        run: python update_ratings.py
 
-      - name: Save changes
+      - name: Commit and Push CSV
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add backend/players/players.csv
-          git commit -m "Automated rating update" || exit 0
+          git commit -m "Automated update" || exit 0
           git push
+
+      - name: Reload PythonAnywhere
+        run: |
+          curl -X POST "https://www.pythonanywhere.com/api/v1/user/redcomp16/webapps/redcomp16.pythonanywhere.com/reload/" \
+            -H "Authorization: Token ${{ secrets.PA_TOKEN }}"
