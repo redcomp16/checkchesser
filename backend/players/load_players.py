@@ -1,12 +1,19 @@
 from .player import Player
 from .uscf_service import USCF_Service
 import csv
+import os
+from pathlib import Path
 
-def Load_Players(csv_path = "players/players.csv"):
+PARENT_DIR = Path(__file__).resolve().parent
+
+def Load_Players(csv_path=None):
+    if csv_path is None:
+        csv_path = PARENT_DIR / "players.csv"
+        
     players = {}
 
-    with open(csv_path, newline = "") as file:
-        reader = csv.DictReader(file, skipinitialspace = True)
+    with open(csv_path, newline="") as file:
+        reader = csv.DictReader(file, skipinitialspace=True)
 
         for row in reader:
             first_name = row["first_name"]
@@ -21,4 +28,4 @@ def Load_Players(csv_path = "players/players.csv"):
 
             players[name] = Player(name, school, grade, uscf_id, official_rating, live_rating, delta_live_rating)
             
-        return players
+    return players
