@@ -17,8 +17,10 @@ jobs:
         run: pip install requests django djangorestframework
 
       - name: Scrape Ratings
-        run: python players/update_ratings.py
+        run: python -m players.update_ratings
         working-directory: backend 
+        env:
+          PYTHONPATH: .
 
       - name: Commit and Push CSV
         run: |
