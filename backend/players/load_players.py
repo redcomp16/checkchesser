@@ -1,5 +1,5 @@
-from .player import Player
-from .uscf_service import USCF_Service
+from player import Player
+from uscf_service import USCF_Service
 import csv
 import os
 from pathlib import Path
