@@ -8,8 +8,7 @@ from load_players import Load_Players
 from uscf_service import USCF_Service
 
 def update_ratings():
-    csv_path = "backend/players/players.csv"
-    players = Load_Players(csv_path)
+    players = Load_Players()
 
     for name, player in players.items():
         print(f"Updating {name}...")
