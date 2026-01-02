@@ -1,8 +1,8 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from .load_players import Load_Players
-from .filter_players import Filter_Players
+from load_players import Load_Players
+from filter_players import Filter_Players
 
 GetPlayers = Load_Players()
 
