@@ -4,8 +4,8 @@ import os
 
 sys.path.append(os.path.join(os.getcwd(), 'backend'))
 
-from players.load_players import Load_Players
-from players.uscf_service import USCF_Service
+from load_players import Load_Players
+from uscf_service import USCF_Service
 
 def update_ratings():
     csv_path = "backend/players/players.csv"
