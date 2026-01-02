@@ -1,8 +1,12 @@
 import csv
 import sys
 import os
+from pathlib import Path
 
-sys.path.append(os.path.join(os.getcwd(), 'backend'))
+BASE_DIR = Path(__file__).resolve().parent
+CSV_PATH = BASE_DIR / "players.csv"
+
+sys.path.append(str(BASE_DIR.parent))
 
 from load_players import Load_Players
 from uscf_service import USCF_Service
