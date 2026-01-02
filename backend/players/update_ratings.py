@@ -19,7 +19,7 @@ def update_ratings():
         USCF_Service.update_ratings(player)
 
     fieldnames = ["first_name", "last_name", "school", "grade", "uscf_id", "official_rating", "live_rating", "delta_live_rating"]
-    with open(csv_path, 'w', newline='') as f:
+    with open(CSV_PATH, 'w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for p in players.values():
