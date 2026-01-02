@@ -8,8 +8,8 @@ CSV_PATH = BASE_DIR / "players.csv"
 
 sys.path.append(str(BASE_DIR.parent))
 
-from load_players import Load_Players
-from uscf_service import USCF_Service
+from .load_players import Load_Players
+from .uscf_service import USCF_Service
 
 def update_ratings():
     players = Load_Players()
