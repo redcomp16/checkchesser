@@ -1,5 +1,5 @@
 import requests
-from .player import Player
+from player import Player
 import time
 
 class USCF_Service:
