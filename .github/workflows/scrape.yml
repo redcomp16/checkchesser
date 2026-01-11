@@ -30,12 +30,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add backend/players/players.csv
-          git commit -m "Automated update" || echo "No changes"
+          git commit --allow-empty -m "Automated update: $(date -u)"
           git push
 
       - name: Sync to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote add hf https://redcomp16:$HF_TOKEN@huggingface.co/spaces/redcomp16/checkchesser-backend
+          git remote add hf https://redcomp16:$HF_TOKEN@huggingface.co/spaces/redcomp16/checkchesser-backend || git remote set-url hf https://redcomp16:$HF_TOKEN@huggingface.co/spaces/redcomp16/checkchesser-backend
+          
+          # Force push ensures Hugging Face picks up the new 'heartbeat' commit
           git push hf main --force
