@@ -74,7 +74,7 @@ ratingHeaders.forEach(header => {
 
 async function loadPlayers(filters = {}) {
     const params = new URLSearchParams(filters);
-    const response = await fetch(`https://redcomp16.pythonanywhere.com/api/players/?${params}`);
+    const response = await fetch(`https://redcomp16-checkchesser-backend.hf.space/api/players/?${params}`);
     if (!response.ok) {
         console.error("Failed to fetch players");
         return;
@@ -85,7 +85,7 @@ async function loadPlayers(filters = {}) {
 
 async function loadPlayers(filters = {}) {
     const params = new URLSearchParams(filters);
-    const response = await fetch(`https://redcomp16.pythonanywhere.com/api/players/?${params}`);
+    const response = await fetch(`https://redcomp16-checkchesser-backend.hf.space/api/players/?${params}`);
 
     if (!response.ok) {
         console.error("Failed to fetch players");
