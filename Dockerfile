@@ -7,4 +7,4 @@ COPY --chown=user requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY --chown=user . .
 EXPOSE 7860
-CMD ["gunicorn", "--bind", "0.0.0.0:7860", "backend.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:7860", "--pythonpath", "backend", "backend.wsgi:application"]
