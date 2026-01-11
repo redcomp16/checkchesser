@@ -10,6 +10,9 @@ jobs:
     permissions: { contents: write }
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       
@@ -22,16 +25,17 @@ jobs:
         env:
           PYTHONPATH: .
 
-      - name: Commit and Push CSV
+      - name: Commit and Push CSV to GitHub
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Stage the file using the full path from the root
           git add backend/players/players.csv
           git commit -m "Automated update" || echo "No changes to commit"
           git push
 
-      - name: Reload PythonAnywhere
+      - name: Sync to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          curl -X POST "https://www.pythonanywhere.com/api/v1/user/redcomp16/webapps/redcomp16.pythonanywhere.com/reload/" \
-            -H "Authorization: Token ${{ secrets.PA_TOKEN }}"
+          git remote add hf https://redcomp16:$HF_TOKEN@huggingface.co/spaces/redcomp16/checkchesser-backend
+          git push hf main --force
