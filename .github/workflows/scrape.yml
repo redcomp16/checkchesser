@@ -17,7 +17,7 @@ jobs:
         with: { python-version: '3.11' }
       
       - name: Install dependencies
-        run: pip install requests django djangorestframework
+        run: pip install requests django djangorestframework gunicorn whitenoise
 
       - name: Scrape Ratings
         run: python -m players.update_ratings
@@ -25,12 +25,12 @@ jobs:
         env:
           PYTHONPATH: .
 
-      - name: Commit and Push CSV to GitHub
+      - name: Commit and Push to GitHub
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add backend/players/players.csv
-          git commit -m "Automated update" || echo "No changes to commit"
+          git commit -m "Automated update" || echo "No changes"
           git push
 
       - name: Sync to Hugging Face
