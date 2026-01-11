@@ -24,13 +24,20 @@ class USCF_Service:
             response = requests.get(player.history_link, timeout=5)
             response.raise_for_status()
             data = response.json()
-            ratings = [r for section in data.get("items", []) for r in section.get("ratingRecords", [])]
+            
+            ratings = [
+                r for section in data.get("items", []) 
+                for r in section.get("ratingRecords", [])
+                if r.get("ratingType") == "R"  # This is the crucial line
+            ]
+            
             if ratings:
                 most_recent = sorted(
                     ratings, 
                     key=lambda r: r.get("event", {}).get("date", ""), 
                     reverse=True
                 )[0]
+                
                 live_rating = most_recent.get("postRating", 0)
                 pre_rating = most_recent.get("preRating", 0)
                 player.live_rating = live_rating
