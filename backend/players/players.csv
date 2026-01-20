@@ -14,54 +14,54 @@ Daniel,Diggs,Masterman,11,30549417,831,831,7
 Jonathan,Djoenaidi,Masterman,12,16160251,1473,1473,32
 Brandon,Fisher,Carver,11,30469312,1083,1083,166
 Carter,Goodyear,New Foundations,11,32245677,703,703,703
-Erti,Goxhaj,New Foundations,11,31711010,807,807,-7
-Ali,Hawkes,Masterman,10,15777743,1519,1523,4
-Allen,Huang,Northeast,11,31705464,1117,1117,-21
-Thomas,Hylan,New Foundations,11,32251388,589,589,589
-Jaiden,Jacob,Northeast,12,30818707,1261,1261,17
-Jack,Jiang,Central,11,16727227,1299,1299,-85
-Sam,Jiang,Swenson,10,32108823,779,779,246
-Tim,Joyce,Carver,11,30469279,1041,1041,102
-Vrishab,Kaushik,Central,11,16580956,1200,1200,208
-Shakhzoda,Kholikulova,George Washington,9,32658142,264,264,58
-Sophia,Kuan,Palumbo,11,16182355,1051,1051,129
-Valen,Li,Masterman,12,16813466,1424,1517,93
-Kirby,Lin,Central,11,16798007,1991,1971,-20
-Edward,Lin,Central,11,30757702,1758,1710,-48
-Gary,Liu,Northeast,12,30965159,986,986,-10
-Amauris,Lopez,Lincoln,9,30959547,200,200,-134
-Brandon,Lopez-Ramirez,Northeast,12,31257616,1032,1032,212
-Terence,Lynch-Alexander,Masterman,9,30818746,329,329,329
-Mabiniti,Mansaray,Palumbo,10,16840095,1211,1251,40
-Dominic,Martinez,Swenson,10,32108834,550,550,2
-Bryan,Martinez-Hernandez,Palumbo,10,31697174,1385,1311,-74
-Darren,Milch,Central,11,16843885,1376,1376,-77
-Sameer,Mohammad,George Washington,11,31685836,1559,1750,150
-Sheikh,Nabih Uddin,Carver,10,32246336,572,572,0
-Even,Ni,Northeast,11,31705525,1372,1386,14
-Christopher,Nicas,Swenson,10,31705869,729,729,-49
-Jonah,Pachikara,Palumbo,11,30480152,697,697,14
-Johnfer,Quispe,Palumbo,11,17254482,1064,1064,16
-Sarvinoz,Rakhimdjanova,Swenson,10,32108796,108,108,7
-Austin,Ready,Masterman,12,15908380,1128,1128,18
+Erti,Goxhaj,New Foundations,11,31711010,807,0,-7
+Ali,Hawkes,Masterman,10,15777743,0,0,4
+Allen,Huang,Northeast,11,31705464,0,0,-21
+Thomas,Hylan,New Foundations,11,32251388,0,0,589
+Jaiden,Jacob,Northeast,12,30818707,0,0,17
+Jack,Jiang,Central,11,16727227,0,1299,-85
+Sam,Jiang,Swenson,10,32108823,0,0,246
+Tim,Joyce,Carver,11,30469279,0,0,102
+Vrishab,Kaushik,Central,11,16580956,0,1200,208
+Shakhzoda,Kholikulova,George Washington,9,32658142,264,0,58
+Sophia,Kuan,Palumbo,11,16182355,0,0,129
+Valen,Li,Masterman,12,16813466,1424,0,93
+Kirby,Lin,Central,11,16798007,0,1971,-20
+Edward,Lin,Central,11,30757702,0,0,-48
+Gary,Liu,Northeast,12,30965159,0,986,-10
+Amauris,Lopez,Lincoln,9,30959547,0,0,-134
+Brandon,Lopez-Ramirez,Northeast,12,31257616,1032,0,212
+Terence,Lynch-Alexander,Masterman,9,30818746,0,0,329
+Mabiniti,Mansaray,Palumbo,10,16840095,0,1251,40
+Dominic,Martinez,Swenson,10,32108834,0,550,2
+Bryan,Martinez-Hernandez,Palumbo,10,31697174,0,1311,-74
+Darren,Milch,Central,11,16843885,0,0,-77
+Sameer,Mohammad,George Washington,11,31685836,0,0,150
+Sheikh,Nabih Uddin,Carver,10,32246336,0,572,0
+Even,Ni,Northeast,11,31705525,0,0,14
+Christopher,Nicas,Swenson,10,31705869,729,0,-49
+Jonah,Pachikara,Palumbo,11,30480152,0,0,14
+Johnfer,Quispe,Palumbo,11,17254482,1064,0,16
+Sarvinoz,Rakhimdjanova,Swenson,10,32108796,108,0,7
+Austin,Ready,Masterman,12,15908380,0,0,18
 Giovanni,Rinehart,Swenson,12,32108844,1317,0,106
-Ewdi,Rosario,Central,11,30959867,0,0,-3
-Olivia,Ryerson,Masterman,8,16727082,1790,0,7
-Brett,Schubert,Swenson,10,32108806,0,0,-67
-Arianna,Stallworth,Bodine,11,17108944,345,345,4
-Alex,Tang,Palumbo,9,31481792,870,842,-28
-Jonathan,Thomas,New Foundations,12,31711152,650,650,-159
-Brandon,Tran,Palumbo,11,30512382,1530,1534,4
-Nhon,Thuong,Northeast,12,31257629,1190,0,-50
-Calvin,Wang,Central,11,30757348,1759,1912,153
-Yehuda,Weinmartin,SLA,10,32658427,1205,1205,1205
-Owen,Wharton,Carver,11,17172035,365,365,-49
-Bryan,Widjaja,Palumbo,11,30476629,819,0,-12
-Justin,Wu,George Washington,9,32658438,813,813,58
-Alston,Yan,George Washington,11,31686374,771,771,-15
-Nina,Yang,Palumbo,9,32127064,924,934,15
-Shydir,Yates,Mastbaum,11,31705655,689,689,2
-Eric,Yeung,Masterman,11,30868847,1721,1772,51
-Ethan,Yeung,Masterman,9,32026657,0,856,5
-Anson,Zhang,Masterman,10,32190285,1002,1002,21
-Luke,Zhu,Central,12,16130670,1347,1347,-25
+Ewdi,Rosario,Central,11,30959867,1128,0,-3
+Olivia,Ryerson,Masterman,8,16727082,0,0,7
+Brett,Schubert,Swenson,10,32108806,301,0,-67
+Arianna,Stallworth,Bodine,11,17108944,0,0,4
+Alex,Tang,Palumbo,9,31481792,0,842,-28
+Jonathan,Thomas,New Foundations,12,31711152,0,0,-159
+Brandon,Tran,Palumbo,11,30512382,1530,0,4
+Nhon,Thuong,Northeast,12,31257629,0,1190,-50
+Calvin,Wang,Central,11,30757348,0,0,153
+Yehuda,Weinmartin,SLA,10,32658427,0,1205,1205
+Owen,Wharton,Carver,11,17172035,0,365,-49
+Bryan,Widjaja,Palumbo,11,30476629,0,0,-12
+Justin,Wu,George Washington,9,32658438,0,813,58
+Alston,Yan,George Washington,11,31686374,0,771,-15
+Nina,Yang,Palumbo,9,32127064,0,0,15
+Shydir,Yates,Mastbaum,11,31705655,0,689,2
+Eric,Yeung,Masterman,11,30868847,0,0,51
+Ethan,Yeung,Masterman,9,32026657,856,0,5
+Anson,Zhang,Masterman,10,32190285,0,1002,21
+Luke,Zhu,Central,12,16130670,0,0,-25
