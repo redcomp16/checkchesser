@@ -2,6 +2,7 @@ import csv
 import sys
 import os
 from pathlib import Path
+import time
 
 BASE_DIR = Path(__file__).resolve().parent
 CSV_PATH = BASE_DIR / "players.csv"
@@ -33,6 +34,7 @@ def update_ratings():
                 "official_rating": p.official_rating,
                 "live_rating": p.live_rating,
                 "delta_live_rating": getattr(p, 'delta_live_rating', 0)
+            time.sleep(1)
             })
 
 if __name__ == "__main__":
