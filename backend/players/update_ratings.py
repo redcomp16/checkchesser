@@ -34,8 +34,8 @@ def update_ratings():
                 "official_rating": p.official_rating,
                 "live_rating": p.live_rating,
                 "delta_live_rating": getattr(p, 'delta_live_rating', 0)
-            time.sleep(1)
             })
+            time.sleep(1)
 
 if __name__ == "__main__":
     update_ratings()
