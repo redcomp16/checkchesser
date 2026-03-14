@@ -1,5 +1,5 @@
 first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live_rating
-Sohail,Aji,Central,11,31482242,1600,1542,-58
+Sohail,Aji,Central,11,31482242,1600,1528,-14
 Shivam,Amin,Central,11,31690179,1174,1175,1
 Jason,Andrew,Carver,11,30469300,998,1079,-5
 Erich,Bitler,Bodine,11,32658020,278,365,87
@@ -23,11 +23,11 @@ Jack,Jiang,Central,11,16727227,1299,1299,-85
 Sam,Jiang,Swenson,10,32108823,976,887,-65
 Tim,Joyce,Carver,11,30469279,1041,1119,55
 Vrishab,Kaushik,Central,11,16580956,1200,1200,208
-Shakhzoda,Kholikulova,George Washington,9,32658142,264,408,-7
+Shakhzoda,Kholikulova,George Washington,9,32658142,264,560,152
 Sophia,Kuan,Palumbo,11,16182355,1051,981,-59
 Valen,Li,Masterman,12,16813466,1532,1546,29
 Kirby,Lin,Central,11,16798007,1982,1997,21
-Edward,Lin,Central,11,30757702,1713,1654,-59
+Edward,Lin,Central,11,30757702,1713,1674,20
 Gary,Liu,Northeast,12,30965159,986,1098,112
 Amauris,Lopez,Lincoln,9,30959547,200,167,-33
 Brandon,Lopez-Ramirez,Northeast,12,31257616,1032,1017,-15
@@ -49,9 +49,9 @@ Ewdi,Rosario,Central,11,30959867,1123,1157,34
 Olivia,Ryerson,Masterman,8,16727082,1793,1782,-13
 Brett,Schubert,Swenson,10,32108806,446,561,96
 Arianna,Stallworth,Bodine,11,17108944,345,345,4
-Alex,Tang,Palumbo,9,31481792,0,0,-40
-Jonathan,Thomas,New Foundations,12,31711152,0,0,196
-Brandon,Tran,Palumbo,11,30512382,0,0,9
+Alex,Tang,Palumbo,9,31481792,0,917,-40
+Jonathan,Thomas,New Foundations,12,31711152,650,846,196
+Brandon,Tran,Palumbo,11,30512382,1603,1635,9
 Nhon,Thuong,Northeast,12,31257629,1208,1197,-11
 Calvin,Wang,Central,11,30757348,1931,1911,-8
 Yehuda,Weinmartin,SLA,10,32658427,1045,1080,35
