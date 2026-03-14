@@ -6,7 +6,7 @@ class USCF_Service:
 
     @staticmethod
     def update_official_rating(player: Player):
-        time.sleep(0.5)
+        time.sleep(1.0)
         try:
             response = requests.get(player.main_link, timeout=5)
             response.raise_for_status()  # raise error for non-200 responses
@@ -19,7 +19,7 @@ class USCF_Service:
 
     @staticmethod
     def update_live_rating(player: Player):
-        time.sleep(0.5)
+        time.sleep(1.0)
         try:
             response = requests.get(player.history_link, timeout=5)
             response.raise_for_status()
