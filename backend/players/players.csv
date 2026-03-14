@@ -1,122 +1,122 @@
 first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live_rating
-Sohail,Aji,Central HS,11,31482242,0,0,0
-Shivam,Amin,Central HS,11,31690179,0,0,0
-Jason,Andrew,Carver HS,11,30469300,0,0,0
-Ahmad,Anseer,Swenson HS,11,32658007,0,0,0
-Erich,Bitler,Bodine HS,11,32658020,0,0,0
-Connor,Bradley,New Foundations HS,12,32251308,0,0,0
-Montgomery,Brown,Carver HS,11,31536947,0,0,0
-Samir,Bunn,Bodine HS,10,32711538,0,0,0
-Omar,Burnett,Boys Latin,12,32711634,0,0,0
-Kaiden,Calamese,Workshop,11,31705366,0,0,0
-Caleb,Camilo,Swenson HS,0,32871402,0,0,0
-David,Caseiro,Central HS,10,31481952,0,0,0
-Crystal,Chen,Northeast HS,12,31098998,0,0,0
-Horace,Chen,Bodine HS,9,32434146,0,0,0
-Thomas,Chen,Masterman HS,9,32711989,0,0,0
-Vincent,Chen,Central HS,11,31877653,0,0,0
-Robert,Chisholm,New Foundations HS,12,32754601,0,0,0
-Areeb,Chowdhury,Northeast HS,11,32245604,0,0,0
-Thomas,Curran,Carver HS,9,31541412,0,0,0
-Culbreth,Cuttino,Lincoln HS,9,32891453,0,0,0
-Eric,Dawson,Bodine HS,9,32885810,0,0,0
-Parish,Delanie,Lincoln HS,9,32891402,0,0,0
-Daniel,Diggs,Masterman HS,11,30549417,0,0,0
-James,Ditoro,Lincoln HS,10,32891372,0,0,0
-Jonathan,Djoenaidi,Masterman HS,12,16160251,0,0,0
-Jhonathan,Dubon-Arana,Northeast HS,11,32892243,0,0,0
-Keyri,Estevez-Custodio,Lincoln HS,9,32891392,0,0,0
-Jaden,Evans-Esquival,Workshop,10,32891564,0,0,0
-Oliver,Fegel,Bodine HS,9,32711593,0,0,0
-Brandon,Fisher,Carver HS,0,30469312,0,0,0
-Tuhmoz,Gilmore,Carver HS,9,31130572,0,0,0
-Carter,Goodyear,New Foundations HS,11,32245677,0,0,0
-Erti,Goxhaj,New Foundations HS,11,31711010,0,0,0
-Jaden,Green,Washington HS,9,32885907,0,0,0
-Mehki,Hatchett,Workshop,11,31482168,0,0,0
-Caspian,Haverkamp,SLA HS,9,32833976,0,0,0
-Ali,Hawkes,Masterman HS,10,15777743,0,0,0
-Shenhai,He,Palumbo HS,11,32891496,0,0,0
-Allen,Huang,Northeast HS,11,31705464,0,0,0
-Thomas,Hylan,New Foundations HS,11,32251388,0,0,0
-Jaiden,Jacob,Northeast HS,12,30818707,0,0,0
-Sanchez Valdez,Jean,Lincoln HS,12,32891425,0,0,0
-Sam,Jiang,Swenson HS,10,32108823,0,0,0
-Terrell,Johnson-Smith,Workshop,9,32891571,0,0,0
-Manni,Joseph,Lincoln HS,9,32891445,0,0,0
-Tim,Joyce,Carver HS,11,30469279,0,0,0
-Shakhzoda,Kholikulova,Washington HS,9,32658142,0,0,0
-Isadore,Kleinman,SLA HS,10,32891502,0,0,0
-Sophia,Kuan,Palumbo HS,11,16182355,0,0,0
-Guanyang,Li,Washington HS,9,32885929,0,0,0
+Sohail,Aji,Central HS,11,31482242,1600,1528,-14
+Shivam,Amin,Central HS,11,31690179,1174,1175,1
+Jason,Andrew,Carver HS,11,30469300,998,1079,-5
+Ahmad,Anseer,Swenson HS,11,32658007,906,748,-64
+Erich,Bitler,Bodine HS,11,32658020,278,365,87
+Connor,Bradley,New Foundations HS,12,32251308,427,580,153
+Montgomery,Brown,Carver HS,11,31536947,892,889,-11
+Samir,Bunn,Bodine HS,10,32711538,0,592,592
+Omar,Burnett,Boys Latin,12,32711634,0,823,823
+Kaiden,Calamese,Workshop,11,31705366,620,629,9
+Caleb,Camilo,Swenson HS,0,32871402,0,176,-52
+David,Caseiro,Central HS,10,31481952,1478,1577,-37
+Crystal,Chen,Northeast HS,12,31098998,1300,1263,-37
+Horace,Chen,Bodine HS,9,32434146,399,418,19
+Thomas,Chen,Masterman HS,9,32711989,0,971,23
+Vincent,Chen,Central HS,11,31877653,1318,1298,-20
+Robert,Chisholm,New Foundations HS,12,32754601,0,536,536
+Areeb,Chowdhury,Northeast HS,11,32245604,0,1115,50
+Thomas,Curran,Carver HS,9,31541412,825,923,57
+Culbreth,Cuttino,Lincoln HS,9,32891453,0,100,100
+Eric,Dawson,Bodine HS,9,32885810,0,338,338
+Parish,Delanie,Lincoln HS,9,32891402,0,100,100
+Daniel,Diggs,Masterman HS,11,30549417,831,818,0
+James,Ditoro,Lincoln HS,10,32891372,0,649,649
+Jonathan,Djoenaidi,Masterman HS,12,16160251,1473,1431,22
+Jhonathan,Dubon-Arana,Northeast HS,11,32892243,0,1093,1093
+Keyri,Estevez-Custodio,Lincoln HS,9,32891392,0,101,101
+Jaden,Evans-Esquival,Workshop,10,32891564,0,546,546
+Oliver,Fegel,Bodine HS,9,32711593,0,362,362
+Brandon,Fisher,Carver HS,0,30469312,1081,1110,61
+Tuhmoz,Gilmore,Carver HS,9,31130572,0,750,750
+Carter,Goodyear,New Foundations HS,11,32245677,703,770,67
+Erti,Goxhaj,New Foundations HS,11,31711010,807,857,50
+Jaden,Green,Washington HS,9,32885907,0,459,200
+Mehki,Hatchett,Workshop,11,31482168,215,209,-6
+Caspian,Haverkamp,SLA HS,9,32833976,843,730,-113
+Ali,Hawkes,Masterman HS,10,15777743,1523,1446,6
+Shenhai,He,Palumbo HS,11,32891496,0,604,604
+Allen,Huang,Northeast HS,11,31705464,1117,1291,174
+Thomas,Hylan,New Foundations HS,11,32251388,589,543,-46
+Jaiden,Jacob,Northeast HS,12,30818707,1261,1487,226
+Sanchez,Valdez Jean,Lincoln HS,12,32891425,0,100,100
+Sam,Jiang,Swenson HS,10,32108823,976,887,-65
+Terrell,Johnson-Smith,Workshop,9,32891571,0,409,409
+Manni,Joseph,Lincoln HS,9,32891445,0,100,100
+Tim,Joyce,Carver HS,11,30469279,1041,1119,55
+Shakhzoda,Kholikulova,Washington HS,9,32658142,264,560,152
+Isadore,Kleinman,SLA HS,10,32891502,0,561,561
+Sophia,Kuan,Palumbo HS,11,16182355,1051,981,-59
+Guanyang,Li,Washington HS,9,32885929,0,296,296
 Valen,Li,Masterman HS,12,16813466,0,0,0
 Giberson,Lilliana,Lincoln HS,9,32891436,0,0,0
-Guerrero Pion,Limbert,Lincoln HS,10,32885952,0,0,0
-Kirby,Lin,Central HS,11,16798007,0,0,0
-Qixin,Lin,Central HS,11,30757702,0,0,0
-Gary,Liu,Northeast HS,12,30965159,0,0,0
-Zaybrien,Lollie,Mastbaum HS,9,32833855,0,0,0
-Amauris,Lopez,Lincoln HS,9,30959547,0,0,0
-Brandon,Lopez-Ramirez,Northeast HS,12,31257616,0,0,0
-Terence,Lynch-Alexander,Masterman HS,9,30818746,0,0,0
-Jacky,Ma,Carver HS,9,32711887,0,0,0
-Mabinti,Mansaray,Palumbo HS,10,16840095,0,0,0
-Dominic,Martinez,Swenson HS,10,32108834,0,0,0
-Jariel,Martinez,Swenson HS,11,32658285,0,0,0
-Bryan,Martinez-Hernandez,Palumbo HS,10,31697174,0,0,0
-Fredrick,Mccarty,Swenson HS,9,32891549,0,0,0
-Bernadette,Mccourt,New Foundations HS,9,32891470,0,0,0
-Darren,Milch,Central HS,11,16843885,0,0,0
-Joseph,Miller,New Foundations HS,11,32246328,0,0,0
-Tora,Mitchell,Workshop,12,32894260,0,0,0
-Ahmed,Mohamed,New Foundations HS,11,32754585,0,0,0
-Sameer,Mohammad,Washington HS,11,31685836,0,0,0
-Sabastian,Moura,Bodine HS,9,32711609,0,0,0
-Sheikh,Nabih Uddin,Carver HS,10,32246336,0,0,0
-Even,Ni,Northeast HS,11,31705525,0,0,0
-Christopher,Nicas,Swenson HS,10,31705869,0,0,0
-Zahir,Owens,Boys Latin,9,32755788,0,0,0
-Jonah,Pachikara,Palumbo HS,11,30480152,0,0,0
-Tyrone,Parker,Washington HS,0,32658336,0,0,0
-Qua'Mair,Plummer,Boys Latin,10,32711818,0,0,0
-Maryam,Qasimi,SLA HS,10,32891534,0,0,0
-Johnfer,Quispe,Palumbo HS,11,17254482,0,0,0
-Sarvinoz,Rakhimdjanova,Swenson HS,10,32108796,0,0,0
-Nelson,Ramirez,Northeast HS,11,32891465,0,0,0
-Jonathan,Randolph,Boys Latin,12,32711663,0,0,0
-Austin,Ready,Masterman HS,12,15908380,0,0,0
-Giovanni,Rinehart,Swenson HS,12,32108844,0,0,0
-Elmer,Rodriguez,New Foundations HS,10,32246310,0,0,0
-Ewdi,Rosario,Central HS,11,30959867,0,0,0
-Jacob,Rosenbach,SLA HS,11,32749855,0,0,0
-Aidan,Ruff,New Foundations HS,9,32891487,0,0,0
-Olivia,Ryerson,Masterman HS,0,16727082,0,0,0
-Ebin,Sajan,Washington HS,9,32885885,0,0,0
-Brett,Schubert,Swenson HS,10,32108806,0,0,0
-Timur,Shomurodov,Washington HS,11,32711944,0,0,0
-Can,Solak,Washington HS,12,32711952,0,0,0
-Luis,Sosa,Swenson HS,9,32891559,0,0,0
-Arianna,Stallworth,Bodine HS,11,32711556,0,0,0
-Alex,Tang,Palumbo HS,9,31481792,0,0,0
-Jonathan,Thomas,New Foundations HS,12,31711152,0,0,0
-Calvin,Thomas-Cubero,Boys Latin,10,32711624,0,0,0
-Brandon,Tran,Palumbo HS,11,30512382,0,0,0
+Guerrero,Pion Limbert,Lincoln HS,10,32885952,0,448,448
+Kirby,Lin,Central HS,11,16798007,1982,1997,21
+Qixin,Lin,Central HS,11,30757702,1713,1674,20
+Gary,Liu,Northeast HS,12,30965159,986,1098,112
+Zaybrien,Lollie,Mastbaum HS,9,32833855,509,225,-284
+Amauris,Lopez,Lincoln HS,9,30959547,200,167,-33
+Brandon,Lopez-Ramirez,Northeast HS,12,31257616,1032,1017,-15
+Terence,Lynch-Alexander,Masterman HS,9,30818746,329,402,73
+Jacky,Ma,Carver HS,9,32711887,0,760,-23
+Mabinti,Mansaray,Palumbo HS,10,16840095,1267,1263,16
+Dominic,Martinez,Swenson HS,10,32108834,550,617,45
+Jariel,Martinez,Swenson HS,11,32658285,696,730,-34
+Bryan,Martinez-Hernandez,Palumbo HS,10,31697174,1279,1306,-2
+Fredrick,Mccarty,Swenson HS,9,32891549,0,320,320
+Bernadette,Mccourt,New Foundations HS,9,32891470,0,527,527
+Darren,Milch,Central HS,11,16843885,1377,1525,148
+Joseph,Miller,New Foundations HS,11,32246328,0,657,-144
+Tora,Mitchell,Workshop,12,32894260,0,670,670
+Ahmed,Mohamed,New Foundations HS,11,32754585,0,1006,1006
+Sameer,Mohammad,Washington HS,11,31685836,1719,1717,18
+Sabastian,Moura,Bodine HS,9,32711609,0,449,449
+Sheikh,Nabih Uddin,Carver HS,10,32246336,572,687,68
+Even,Ni,Northeast HS,11,31705525,1386,1373,-13
+Christopher,Nicas,Swenson HS,10,31705869,685,710,7
+Zahir,Owens,Boys Latin,9,32755788,0,100,100
+Jonah,Pachikara,Palumbo HS,11,30480152,697,704,7
+Tyrone,Parker,Washington HS,0,32658336,625,672,-73
+Qua'Mair,Plummer,Boys Latin,10,32711818,0,101,101
+Maryam,Qasimi,SLA HS,10,32891534,0,711,711
+Johnfer,Quispe,Palumbo HS,11,17254482,1064,1103,9
+Sarvinoz,Rakhimdjanova,Swenson HS,10,32108796,108,106,-2
+Nelson,Ramirez,Northeast HS,11,32891465,0,871,871
+Jonathan,Randolph,Boys Latin,12,32711663,0,622,622
+Austin,Ready,Masterman HS,12,15908380,1128,1133,-42
+Giovanni,Rinehart,Swenson HS,12,32108844,1376,1398,11
+Elmer,Rodriguez,New Foundations HS,10,32246310,0,214,114
+Ewdi,Rosario,Central HS,11,30959867,1123,1157,34
+Jacob,Rosenbach,SLA HS,11,32749855,1024,944,-80
+Aidan,Ruff,New Foundations HS,9,32891487,0,708,708
+Olivia,Ryerson,Masterman HS,0,16727082,1793,1782,-13
+Ebin,Sajan,Washington HS,9,32885885,0,294,294
+Brett,Schubert,Swenson HS,10,32108806,446,561,96
+Timur,Shomurodov,Washington HS,11,32711944,1371,1569,11
+Can,Solak,Washington HS,12,32711952,0,1496,1496
+Luis,Sosa,Swenson HS,9,32891559,0,328,328
+Arianna,Stallworth,Bodine HS,11,32711556,0,266,266
+Alex,Tang,Palumbo HS,9,31481792,999,917,-40
+Jonathan,Thomas,New Foundations HS,12,31711152,650,846,196
+Calvin,Thomas-Cubero,Boys Latin,10,32711624,0,511,511
+Brandon,Tran,Palumbo HS,11,30512382,1603,1635,9
 Nhon,Truong,Northeast HS,12,31257629,0,0,0
 Christopher,Vasquez-Reyes,Boys Latin,10,32754668,0,0,0
-Nafiys,Walters,Boys Latin,11,32885835,0,0,0
-Calvin Jiarui,Wang,Central HS,11,30757348,0,0,0
-Rowe,Weber,Bodine HS,11,32711579,0,0,0
-Yehuda,Weinmartin,SLA HS,10,32658427,0,0,0
-Emmanuel,Weiss,Workshop,12,31101801,0,0,0
-Owen,Wharton,Carver HS,11,17172035,0,0,0
-Bryan,Widjaja,Palumbo HS,11,30476629,0,0,0
-Justin,Wu,Washington HS,9,32658438,0,0,0
-Pinshuai,Xie,Northeast HS,0,32711999,0,0,0
-Alston,Yan,Washington HS,11,31686374,0,0,0
-Nina,Yang,Palumbo HS,9,32127064,0,0,0
-Shydir,Yates,Mastbaum HS,11,31705655,0,0,0
-Eric,Yeung,Masterman HS,11,30868847,0,0,0
-Ethan,Yeung,Masterman HS,9,32026657,0,0,0
-Anson,Zhang,Masterman HS,10,32190285,0,0,0
-Yuxuan,Zhang,SLA HS,10,32891514,0,0,0
-Luke,Zhu,Central HS,12,16130670,0,0,0
+Nafiys,Walters,Boys Latin,11,32885835,0,608,608
+Calvin,Jiarui Wang,Central HS,11,30757348,1931,1911,-8
+Rowe,Weber,Bodine HS,11,32711579,0,495,495
+Yehuda,Weinmartin,SLA HS,10,32658427,1045,1080,35
+Emmanuel,Weiss,Workshop,12,31101801,474,448,-26
+Owen,Wharton,Carver HS,11,17172035,365,634,269
+Bryan,Widjaja,Palumbo HS,11,30476629,819,794,-25
+Justin,Wu,Washington HS,9,32658438,813,784,6
+Pinshuai,Xie,Northeast HS,0,32711999,0,761,761
+Alston,Yan,Washington HS,11,31686374,771,763,-10
+Nina,Yang,Palumbo HS,9,32127064,969,1049,53
+Shydir,Yates,Mastbaum HS,11,31705655,689,740,51
+Eric,Yeung,Masterman HS,11,30868847,1791,1715,-21
+Ethan,Yeung,Masterman HS,9,32026657,1042,970,11
+Anson,Zhang,Masterman HS,10,32190285,1099,1147,-47
+Yuxuan,Zhang,SLA HS,10,32891514,0,543,543
+Luke,Zhu,Central HS,12,16130670,1347,1354,7
