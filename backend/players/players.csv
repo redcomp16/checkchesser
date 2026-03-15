@@ -49,7 +49,7 @@ Shakhzoda,Kholikulova,Washington,9,32658142,264,560,152
 Isadore,Kleinman,SLA,10,32891502,0,561,561
 Sophia,Kuan,Palumbo,11,16182355,1051,981,-59
 Guanyang,Li,Washington,9,32885929,0,296,296
-Valen,Li,Masterman,12,16813466,1532,1546,29
+Valen,Li,Masterman,12,16813466,0,1546,29
 Giberson,Lilliana,Lincoln,9,32891436,0,100,100
 Guerrero,Pion Limbert,Lincoln,10,32885952,0,448,448
 Kirby,Lin,Central,11,16798007,1982,1997,21
@@ -99,7 +99,7 @@ Luis,Sosa,Swenson,9,32891559,0,328,328
 Arianna,Stallworth,Bodine,11,32711556,0,266,266
 Alex,Tang,Palumbo,9,31481792,999,917,-40
 Jonathan,Thomas,New Foundations,12,31711152,650,846,196
-Calvin,Thomas-Cubero,Boys Latin,10,32711624,0,511,511
+Calvin,Thomas-Cubero,Boys Latin,10,32711624,0,0,511
 Brandon,Tran,Palumbo,11,30512382,1603,1635,9
 Nhon,Truong,Northeast,12,31257629,1208,1197,-11
 Christopher,Vasquez-Reyes,Boys Latin,10,32754668,0,382,382
@@ -107,14 +107,14 @@ Nafiys,Walters,Boys Latin,11,32885835,0,608,608
 Calvin,Jiarui Wang,Central,11,30757348,1931,1911,-8
 Rowe,Weber,Bodine,11,32711579,0,495,495
 Yehuda,Weinmartin,SLA,10,32658427,1045,1080,35
-Emmanuel,Weiss,Workshop,12,31101801,474,0,0
+Emmanuel,Weiss,Workshop,12,31101801,474,448,-26
 Owen,Wharton,Carver,11,17172035,365,634,269
-Bryan,Widjaja,Palumbo,11,30476629,0,794,-25
+Bryan,Widjaja,Palumbo,11,30476629,819,794,-25
 Justin,Wu,Washington,9,32658438,813,784,6
 Pinshuai,Xie,Northeast,0,32711999,0,761,761
 Alston,Yan,Washington,11,31686374,771,763,-10
 Nina,Yang,Palumbo,9,32127064,969,1049,53
-Shydir,Yates,Mastbaum,11,31705655,0,740,51
+Shydir,Yates,Mastbaum,11,31705655,689,740,51
 Eric,Yeung,Masterman,11,30868847,1791,1715,-21
 Ethan,Yeung,Masterman,9,32026657,1042,970,11
 Anson,Zhang,Masterman,10,32190285,1099,1147,-47
