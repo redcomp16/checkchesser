@@ -2,7 +2,7 @@ first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live
 Sohail,Aji,Central,11,31482242,1600,1454,-33
 Shivam,Amin,Central,11,31690179,1174,1175,1
 Jason,Andrew,Carver,11,30469300,998,1157,22
-Ahmad,Anseer,Swenson,11,32658007,906,748,-64
+Ahmad,Anseer,Swenson,11,32658007,906,744,-4
 Erich,Bitler,Bodine,11,32658020,278,365,87
 Connor,Bradley,New Foundations,12,32251308,427,580,153
 Montgomery,Brown,Carver,11,31536947,892,941,-14
@@ -42,7 +42,7 @@ Thomas,Hylan,New Foundations,11,32251388,589,543,-46
 Jaiden,Jacob,Northeast,12,30818707,1261,1460,-17
 Sanchez,Valdez Jean,Lincoln,12,32891425,0,100,100
 Jack,Jiang,Central,13,16727227,1299,1299,-85
-Sam,Jiang,Swenson,10,32108823,976,887,-66
+Sam,Jiang,Swenson,10,32108823,976,910,23
 Terrell,Johnson-Smith,Workshop,9,32891571,0,409,409
 Manni,Joseph,Lincoln,9,32891445,0,100,100
 Tim,Joyce,Carver,11,30469279,1041,1100,-17
@@ -64,7 +64,7 @@ Terence,Lynch-Alexander,Masterman,9,30818746,329,402,73
 Jacky,Ma,Carver,9,32711887,0,818,61
 Mabinti,Mansaray,Palumbo,10,16840095,1267,1322,39
 Dominic,Martinez,Swenson,10,32108834,550,617,45
-Jariel,Martinez,Swenson,11,32658285,696,730,-35
+Jariel,Martinez,Swenson,11,32658285,696,683,-47
 Bryan,Martinez-Hernandez,Palumbo,10,31697174,1279,1312,-6
 Fredrick,Mccarty,Swenson,9,32891549,0,320,320
 Bernadette,Mccourt,New Foundations,9,32891470,0,527,527
@@ -76,7 +76,7 @@ Sameer,Mohammad,Washington,11,31685836,1719,1717,18
 Sabastian,Moura,Bodine,9,32711609,0,449,449
 Sheikh,Nabih Uddin,Carver,10,32246336,572,685,-2
 Even,Ni,Northeast,11,31705525,1386,1381,9
-Christopher,Nicas,Swenson,10,31705869,685,710,6
+Christopher,Nicas,Swenson,10,31705869,685,679,-31
 Zahir,Owens,Boys Latin,9,32755788,0,100,100
 Jonah,Pachikara,Palumbo,11,30480152,697,704,7
 Tyrone,Parker,Washington,0,32658336,625,673,-72
@@ -87,14 +87,14 @@ Sarvinoz,Rakhimdjanova,Swenson,10,32108796,108,106,-2
 Nelson,Ramirez,Northeast,11,32891465,0,871,871
 Jonathan,Randolph,Boys Latin,12,32711663,0,623,623
 Austin,Ready,Masterman,12,15908380,1128,1133,-42
-Giovanni,Rinehart,Swenson,12,32108844,1376,1398,11
+Giovanni,Rinehart,Swenson,12,32108844,1376,1382,-16
 Elmer,Rodriguez,New Foundations,10,32246310,0,214,114
 Ewdi,Rosario,Central,11,30959867,1123,1157,34
 Jacob,Rosenbach,SLA,11,32749855,1024,944,-80
 Aidan,Ruff,New Foundations,9,32891487,0,708,708
-Olivia,Ryerson,Masterman,0,16727082,1793,1808,26
+Olivia,Ryerson,Masterman,0,16727082,1793,1751,-57
 Ebin,Sajan,Washington,9,32885885,0,294,294
-Brett,Schubert,Swenson,10,32108806,446,561,96
+Brett,Schubert,Swenson,10,32108806,446,503,-58
 Timur,Shomurodov,Washington,11,32711944,1371,1569,11
 Can,Solak,Washington,12,32711952,0,1496,1496
 Luis,Sosa,Swenson,9,32891559,0,328,328
