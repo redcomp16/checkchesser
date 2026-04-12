@@ -1,5 +1,5 @@
 first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live_rating
-Sohail,Aji,Central,11,31482242,1487,1454,-33
+Sohail,Aji,Central,11,31482242,1487,1455,1
 Shivam,Amin,Central,11,31690179,1175,1175,1
 Jason,Andrew,Carver,11,30469300,1135,1157,22
 Ahmad,Anseer,Swenson,11,32658007,748,744,-4
@@ -47,7 +47,7 @@ Terrell,Johnson-Smith,Workshop,9,32891571,0,409,409
 Manni,Joseph,Lincoln,9,32891445,0,100,100
 Tim,Joyce,Carver,11,30469279,1117,1100,-17
 Vrishab,Kaushik,Central,13,16580956,1200,1200,208
-Shakhzoda,Kholikulova,Washington,9,32658142,560,685,125
+Shakhzoda,Kholikulova,Washington,9,32658142,560,653,-32
 Isadore,Kleinman,SLA,10,32891502,561,561,561
 Sophia,Kuan,Palumbo,11,16182355,954,954,-27
 Guanyang,Li,Washington,9,32885929,0,296,296
@@ -55,7 +55,7 @@ Valen,Li,Masterman,12,16813466,1546,1546,29
 Giberson,Lilliana,Lincoln,9,32891436,0,100,100
 Guerrero,Pion Limbert,Lincoln,10,32885952,0,448,448
 Kirby,Lin,Central,11,16798007,1997,2040,-14
-Qixin,Lin,Central,11,30757702,1676,1680,4
+Qixin,Lin,Central,11,30757702,1676,1728,48
 Gary,Liu,Northeast,12,30965159,1098,1048,-50
 Zaybrien,Lollie,Mastbaum,9,32833855,225,225,-284
 Amauris,Lopez,Lincoln,9,30959547,167,167,-33
@@ -65,7 +65,7 @@ Jacky,Ma,Carver,9,32711887,757,818,61
 Mabinti,Mansaray,Palumbo,10,16840095,1283,1322,39
 Dominic,Martinez,Swenson,10,32108834,617,617,45
 Jariel,Martinez,Swenson,11,32658285,730,683,-47
-Bryan,Martinez-Hernandez,Palumbo,10,31697174,1318,1312,-6
+Bryan,Martinez-Hernandez,Palumbo,10,31697174,1318,1312,0
 Fredrick,Mccarty,Swenson,9,32891549,320,320,320
 Bernadette,Mccourt,New Foundations,9,32891470,527,527,527
 Darren,Milch,Central,11,16843885,1526,1528,2
@@ -95,7 +95,7 @@ Aidan,Ruff,New Foundations,9,32891487,708,708,708
 Olivia,Ryerson,Masterman,0,16727082,1782,1750,-58
 Ebin,Sajan,Washington,9,32885885,0,294,294
 Brett,Schubert,Swenson,10,32108806,561,503,-58
-Timur,Shomurodov,Washington,11,32711944,1569,1569,11
+Timur,Shomurodov,Washington,11,32711944,1569,1567,-2
 Can,Solak,Washington,12,32711952,1496,1496,1496
 Luis,Sosa,Swenson,9,32891559,0,328,328
 Arianna,Stallworth,Bodine,11,32711556,0,266,266
