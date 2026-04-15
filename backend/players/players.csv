@@ -1,5 +1,5 @@
 first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live_rating
-Sohail,Aji,Central,11,31482242,1487,1455,1
+Sohail,Aji,Central,11,31482242,1487,1477,23
 Shivam,Amin,Central,11,31690179,1175,1175,1
 Jason,Andrew,Carver,11,30469300,1135,1157,22
 Ahmad,Anseer,Swenson,11,32658007,748,744,-4
@@ -11,7 +11,7 @@ Omar,Burnett,Boys Latin,12,32711634,823,823,823
 Kaiden,Calamese,Workshop,11,31705366,629,629,9
 Caleb,Camilo,Swenson,0,32871402,176,176,-52
 David,Caseiro,Central,10,31481952,1536,1540,4
-Crystal,Chen,Northeast,12,31098998,1257,1380,107
+Crystal,Chen,Northeast,12,31098998,1257,1379,106
 Horace,Chen,Bodine,9,32434146,419,419,20
 Thomas,Chen,Masterman,9,32711989,971,971,23
 Vincent,Chen,Central,11,31877653,1300,1303,3
