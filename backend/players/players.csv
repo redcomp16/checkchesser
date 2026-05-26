@@ -1,5 +1,5 @@
 first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live_rating
-Sohail,Aji,Central,11,31482242,1477,1645,168
+Sohail,Aji,Central,11,31482242,1477,1703,58
 Shivam,Amin,Central,11,31690179,1175,1175,1
 Jason,Andrew,Carver,11,30469300,1157,1157,22
 Ahmad,Anseer,Swenson,11,32658007,744,744,-4
@@ -92,7 +92,7 @@ Elmer,Rodriguez,New Foundations,10,32246310,214,214,114
 Ewdi,Rosario,Central,11,30959867,1157,1157,34
 Jacob,Rosenbach,SLA,11,32749855,944,944,-80
 Aidan,Ruff,New Foundations,9,32891487,708,708,708
-Olivia,Ryerson,Masterman,8,16727082,1748,1742,-6
+Olivia,Ryerson,Masterman,8,16727082,1748,1703,-39
 Ebin,Sajan,Washington,9,32885885,0,294,294
 Brett,Schubert,Swenson,10,32108806,503,503,-58
 Timur,Shomurodov,Washington,11,32711944,1567,1568,1
