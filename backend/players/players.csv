@@ -1,5 +1,5 @@
 first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live_rating
-Sohail,Aji,Central,11,31482242,1477,1703,58
+Sohail,Aji,Central,11,31482242,1645,1703,58
 Shivam,Amin,Central,11,31690179,1175,1175,1
 Jason,Andrew,Carver,11,30469300,1157,1157,22
 Ahmad,Anseer,Swenson,11,32658007,744,744,-4
@@ -10,7 +10,7 @@ Samir,Bunn,Bodine,10,32711538,592,592,592
 Omar,Burnett,Boys Latin,12,32711634,823,823,823
 Kaiden,Calamese,Workshop,11,31705366,629,629,9
 Caleb,Camilo,Swenson,0,32871402,176,176,-52
-David,Caseiro,Central,10,31481952,1540,1524,-16
+David,Caseiro,Central,10,31481952,1524,1524,-16
 Crystal,Chen,Northeast,12,31098998,1379,1379,106
 Horace,Chen,Bodine,9,32434146,419,419,20
 Thomas,Chen,Masterman,9,32711989,971,971,23
@@ -54,18 +54,18 @@ Guanyang,Li,Washington,9,32885929,0,296,296
 Valen,Li,Masterman,12,16813466,1546,1546,29
 Giberson,Lilliana,Lincoln,9,32891436,0,100,100
 Guerrero,Pion Limbert,Lincoln,10,32885952,0,448,448
-Kirby,Lin,Central,11,16798007,2040,2009,-31
-Qixin,Lin,Central,11,30757702,1728,1702,-26
+Kirby,Lin,Central,11,16798007,2009,2009,-31
+Qixin,Lin,Central,11,30757702,1702,1702,-26
 Gary,Liu,Northeast,12,30965159,1048,1048,-50
 Zaybrien,Lollie,Mastbaum,9,32833855,225,225,-284
 Amauris,Lopez,Lincoln,9,30959547,167,167,-33
 Brandon,Lopez-Ramirez,Northeast,12,31257616,1043,1043,26
 Terence,Lynch-Alexander,Masterman,9,30818746,402,402,73
 Jacky,Ma,Carver,9,32711887,818,818,61
-Mabinti,Mansaray,Palumbo,10,16840095,1338,1334,-4
+Mabinti,Mansaray,Palumbo,10,16840095,1334,1334,-4
 Dominic,Martinez,Swenson,10,32108834,617,617,45
 Jariel,Martinez,Swenson,11,32658285,683,683,-47
-Bryan,Martinez-Hernandez,Palumbo,10,31697174,1312,1312,0
+Bryan,Martinez-Hernandez,Palumbo,10,31697174,1312,1477,165
 Fredrick,Mccarty,Swenson,9,32891549,320,320,320
 Bernadette,Mccourt,New Foundations,9,32891470,527,527,527
 Darren,Milch,Central,11,16843885,1528,1528,2
@@ -92,17 +92,17 @@ Elmer,Rodriguez,New Foundations,10,32246310,214,214,114
 Ewdi,Rosario,Central,11,30959867,1157,1157,34
 Jacob,Rosenbach,SLA,11,32749855,944,944,-80
 Aidan,Ruff,New Foundations,9,32891487,708,708,708
-Olivia,Ryerson,Masterman,8,16727082,1748,1703,-39
+Olivia,Ryerson,Masterman,8,16727082,1742,1703,-39
 Ebin,Sajan,Washington,9,32885885,0,294,294
 Brett,Schubert,Swenson,10,32108806,503,503,-58
-Timur,Shomurodov,Washington,11,32711944,1567,1568,1
+Timur,Shomurodov,Washington,11,32711944,1568,1568,1
 Can,Solak,Washington,12,32711952,1496,1496,1496
 Luis,Sosa,Swenson,9,32891559,0,328,328
 Arianna,Stallworth,Bodine,11,32711556,0,266,266
 Alex,Tang,Palumbo,9,31481792,915,915,-2
 Jonathan,Thomas,New Foundations,12,31711152,846,846,196
 Calvin,Thomas-Cubero,Boys Latin,10,32711624,511,511,511
-Brandon,Tran,Palumbo,11,30512382,1671,1672,33
+Brandon,Tran,Palumbo,11,30512382,1672,1672,33
 Nhon,Truong,Northeast,12,31257629,1187,1187,12
 Christopher,Vasquez-Reyes,Boys Latin,10,32754668,0,382,382
 Nafiys,Walters,Boys Latin,11,32885835,0,608,608
