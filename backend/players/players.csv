@@ -3,20 +3,20 @@ Sohail,Aji,Central,11,31482242,1645,1703,58
 Shivam,Amin,Central,11,31690179,1175,1175,1
 Jason,Andrew,Carver,11,30469300,1157,1157,22
 Ahmad,Anseer,Swenson,11,32658007,744,744,-4
-Erich,Bitler,Bodine,11,32658020,365,365,87
+Erich,Bitler,Bodine,11,32658020,365,365,86
 Connor,Bradley,New Foundations,12,32251308,580,580,153
 Montgomery,Brown,Carver,11,31536947,941,941,-14
 Samir,Bunn,Bodine,10,32711538,592,592,592
 Omar,Burnett,Boys Latin,12,32711634,823,823,823
 Kaiden,Calamese,Workshop,11,31705366,629,629,9
-Caleb,Camilo,Swenson,0,32871402,176,176,-52
+Caleb,Camilo,Swenson,0,32871402,176,176,-53
 David,Caseiro,Central,10,31481952,1524,1524,-16
 Crystal,Chen,Northeast,12,31098998,1379,1379,106
 Horace,Chen,Bodine,9,32434146,419,419,20
 Thomas,Chen,Masterman,9,32711989,971,971,23
 Vincent,Chen,Central,11,31877653,1303,1303,3
 Robert,Chisholm,New Foundations,12,32754601,536,536,536
-Areeb,Chowdhury,Northeast,11,32245604,958,958,-85
+Areeb,Chowdhury,Northeast,11,32245604,958,959,-84
 Thomas,Curran,Carver,9,31541412,921,921,-2
 Culbreth,Cuttino,Lincoln,9,32891453,0,100,100
 Eric,Dawson,Bodine,9,32885810,338,338,338
@@ -28,17 +28,17 @@ Jhonathan,Dubon-Arana,Northeast,11,32892243,0,1093,1093
 Keyri,Estevez-Custodio,Lincoln,9,32891392,101,101,101
 Jaden,Evans-Esquival,Workshop,10,32891564,0,546,546
 Oliver,Fegel,Bodine,9,32711593,363,363,363
-Brandon,Fisher,Carver,11,30469312,1099,1099,-11
+Brandon,Fisher,Carver,11,30469312,1099,1100,-10
 Tuhmoz,Gilmore,Carver,9,31130572,835,835,85
 Carter,Goodyear,New Foundations,11,32245677,771,771,68
 Erti,Goxhaj,New Foundations,11,31711010,857,857,50
 Jaden,Green,Washington,9,32885907,459,459,200
 Mehki,Hatchett,Workshop,11,31482168,209,209,-6
-Caspian,Haverkamp,SLA,9,32833976,730,730,-113
+Caspian,Haverkamp,SLA,9,32833976,730,731,-112
 Ali,Hawkes,Masterman,10,15777743,1446,1446,6
 Shenhai,He,Palumbo,11,32891496,0,604,604
 Allen,Huang,Northeast,11,31705464,1280,1280,1
-Thomas,Hylan,New Foundations,11,32251388,543,543,-46
+Thomas,Hylan,New Foundations,11,32251388,543,545,-45
 Jaiden,Jacob,Northeast,12,30818707,1460,1460,-17
 Sanchez,Valdez Jean,Lincoln,12,32891425,0,100,100
 Jack,Jiang,Central,11,16727227,1299,1299,-85
@@ -76,13 +76,13 @@ Sameer,Mohammad,Washington,11,31685836,1717,1717,18
 Sabastian,Moura,Bodine,9,32711609,449,449,449
 Sheikh,Nabih Uddin,Carver,10,32246336,685,685,-2
 Even,Ni,Northeast,11,31705525,1381,1381,9
-Christopher,Nicas,Swenson,10,31705869,679,679,-31
+Christopher,Nicas,Swenson,10,31705869,679,679,-32
 Zahir,Owens,Boys Latin,9,32755788,0,100,100
 Jonah,Pachikara,Palumbo,11,30480152,704,704,7
 Tyrone,Parker,Washington,9,32658336,673,673,-72
 Qua'Mair,Plummer,Boys Latin,10,32711818,101,101,101
 Maryam,Qasimi,SLA,10,32891534,711,711,711
-Johnfer,Quispe,Palumbo,11,17254482,1112,1112,-5
+Johnfer,Quispe,Palumbo,11,17254482,1112,1113,-4
 Sarvinoz,Rakhimdjanova,Swenson,10,32108796,106,106,-2
 Nelson,Ramirez,Northeast,11,32891465,0,871,871
 Jonathan,Randolph,Boys Latin,12,32711663,623,623,623
@@ -90,12 +90,12 @@ Austin,Ready,Masterman,12,15908380,1133,1133,-42
 Giovanni,Rinehart,Swenson,12,32108844,1382,1382,-16
 Elmer,Rodriguez,New Foundations,10,32246310,214,214,114
 Ewdi,Rosario,Central,11,30959867,1157,1157,34
-Jacob,Rosenbach,SLA,11,32749855,944,944,-80
+Jacob,Rosenbach,SLA,11,32749855,944,945,-79
 Aidan,Ruff,New Foundations,9,32891487,708,708,708
 Olivia,Ryerson,Masterman,8,16727082,1742,1703,-39
 Ebin,Sajan,Washington,9,32885885,0,294,294
 Brett,Schubert,Swenson,10,32108806,503,503,-58
-Timur,Shomurodov,Washington,11,32711944,1568,1568,1
+Timur,Shomurodov,Washington,11,32711944,1568,1569,2
 Can,Solak,Washington,12,32711952,1496,1496,1496
 Luis,Sosa,Swenson,9,32891559,0,328,328
 Arianna,Stallworth,Bodine,11,32711556,0,266,266
@@ -111,7 +111,7 @@ Rowe,Weber,Bodine,11,32711579,495,495,495
 Yehuda,Weinmartin,SLA,10,32658427,1080,1080,35
 Emmanuel,Weiss,Workshop,12,31101801,448,448,-26
 Owen,Wharton,Carver,11,17172035,632,632,-2
-Bryan,Widjaja,Palumbo,11,30476629,818,818,-5
+Bryan,Widjaja,Palumbo,11,30476629,818,819,-4
 Justin,Wu,Washington,9,32658438,784,784,6
 Pinshuai,Xie,Northeast,9,32711999,724,724,-37
 Alston,Yan,Washington,11,31686374,763,763,-10
