@@ -55,7 +55,7 @@ Valen,Li,Masterman,12,16813466,1546,1546,29
 Giberson,Lilliana,Lincoln,9,32891436,0,100,100
 Guerrero,Pion Limbert,Lincoln,10,32885952,0,448,448
 Kirby,Lin,Central,11,16798007,2009,2027,18
-Qixin,Lin,Central,11,30757702,1773,1786,13
+Qixin,Lin,Central,11,30757702,1773,1762,-24
 Gary,Liu,Northeast,12,30965159,1048,1048,-50
 Zaybrien,Lollie,Mastbaum,9,32833855,225,225,-284
 Amauris,Lopez,Lincoln,9,30959547,167,171,-33
@@ -65,7 +65,7 @@ Jacky,Ma,Carver,9,32711887,818,818,61
 Mabinti,Mansaray,Palumbo,10,16840095,1334,1334,-4
 Dominic,Martinez,Swenson,10,32108834,617,617,45
 Jariel,Martinez,Swenson,11,32658285,683,683,-47
-Bryan,Martinez-Hernandez,Palumbo,10,31697174,1477,1477,165
+Bryan,Martinez-Hernandez,Palumbo,10,31697174,1477,1477,0
 Fredrick,Mccarty,Swenson,9,32891549,320,320,320
 Bernadette,Mccourt,New Foundations,9,32891470,527,527,527
 Darren,Milch,Central,11,16843885,1528,1528,2
@@ -95,7 +95,7 @@ Aidan,Ruff,New Foundations,9,32891487,708,708,708
 Olivia,Ryerson,Masterman,8,16727082,1705,1721,16
 Ebin,Sajan,Washington,9,32885885,0,296,296
 Brett,Schubert,Swenson,10,32108806,503,503,-58
-Timur,Shomurodov,Washington,11,32711944,1610,1590,-20
+Timur,Shomurodov,Washington,11,32711944,1610,1619,29
 Can,Solak,Washington,12,32711952,1496,1496,1496
 Luis,Sosa,Swenson,9,32891559,0,328,328
 Arianna,Stallworth,Bodine,11,32711556,0,266,266
@@ -119,6 +119,6 @@ Nina,Yang,Palumbo,9,32127064,1150,1149,80
 Shydir,Yates,Mastbaum,11,31705655,740,740,51
 Eric,Yeung,Masterman,11,30868847,1714,1735,21
 Ethan,Yeung,Masterman,9,32026657,970,970,11
-Anson,Zhang,Masterman,10,32190285,1044,1044,-50
+Anson,Zhang,Masterman,10,32190285,1044,1082,9
 Yuxuan,Zhang,SLA,10,32891514,543,544,544
 Luke,Zhu,Central,12,16130670,1363,1363,8
