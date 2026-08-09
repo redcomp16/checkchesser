@@ -1,5 +1,5 @@
 first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live_rating
-Sohail,Aji,Central,12,31482242,1755,1755,88
+Sohail,Aji,Central,12,31482242,1755,1741,-14
 Shivam,Amin,Central,12,31690179,1175,1175,1
 Jason,Andrew,Carver,12,30469300,1157,1157,22
 Ahmad,Anseer,Swenson,12,32658007,744,744,-4
@@ -47,7 +47,7 @@ Guanyang,Li,Washington,10,32885929,0,297,297
 Giberson,Lilliana,Lincoln,10,32891436,0,100,100
 Guerrero,Pion Limbert,Lincoln,11,32885952,0,448,448
 Kirby,Lin,Central,12,16798007,2027,2001,-25
-Qixin,Lin,Central,12,30757702,1762,1762,-24
+Qixin,Lin,Central,12,30757702,1762,1792,30
 Zaybrien,Lollie,Mastbaum,10,32833855,225,225,-284
 Amauris,Lopez,Lincoln,10,30959547,171,171,-33
 Terence,Lynch-Alexander,Masterman,10,30818746,402,402,73
@@ -55,9 +55,9 @@ Jacky,Ma,Carver,10,32711887,818,818,61
 Mabinti,Mansaray,Palumbo,11,16840095,1334,1334,-4
 Dominic,Martinez,Swenson,11,32108834,617,617,45
 Jariel,Martinez,Swenson,12,32658285,683,683,-47
-Bryan,Martinez-Hernandez,Palumbo,11,31697174,1477,1482,5
+Bryan,Martinez-Hernandez,Palumbo,11,31697174,1477,1473,-9
 Fredrick,Mccarty,Swenson,10,32891549,320,320,320
-Bernadette,Mccourt,New Foundations,10,32891470,527,527,527
+Bernadette,Mccourt,New Foundations,10,32891470,527,637,110
 Darren,Milch,Central,12,16843885,1528,1528,2
 Joseph,Miller,New Foundations,12,32246328,657,657,-144
 Ahmed,Mohamed,New Foundations,12,32754585,1007,1007,1007
@@ -81,7 +81,7 @@ Aidan,Ruff,New Foundations,10,32891487,708,708,708
 Olivia,Ryerson,Masterman,9,16727082,1721,1725,4
 Ebin,Sajan,Washington,10,32885885,0,296,296
 Brett,Schubert,Swenson,11,32108806,503,503,-58
-Timur,Shomurodov,Washington,12,32711944,1619,1634,15
+Timur,Shomurodov,Washington,12,32711944,1619,1626,-8
 Luis,Sosa,Swenson,10,32891559,0,328,328
 Arianna,Stallworth,Bodine,12,32711556,0,266,266
 Alex,Tang,Palumbo,10,31481792,915,915,-2
@@ -101,5 +101,5 @@ Nina,Yang,Palumbo,10,32127064,1149,1149,80
 Shydir,Yates,Mastbaum,12,31705655,740,740,51
 Eric,Yeung,Masterman,12,30868847,1735,1735,21
 Ethan,Yeung,Masterman,10,32026657,970,970,11
-Anson,Zhang,Masterman,11,32190285,1082,1082,9
+Anson,Zhang,Masterman,11,32190285,1082,1079,-3
 Yuxuan,Zhang,SLA,11,32891514,544,544,544
