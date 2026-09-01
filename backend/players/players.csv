@@ -1,17 +1,17 @@
 first_name,last_name,school,grade,uscf_id,official_rating,live_rating,delta_live_rating
-Sohail,Aji,Central,12,31482242,1755,1741,-15
+Sohail,Aji,Central,12,31482242,1741,1741,-15
 Shivam,Amin,Central,12,31690179,1175,1175,1
 Jason,Andrew,Carver,12,30469300,1157,1157,22
 Ahmad,Anseer,Swenson,12,32658007,744,744,-4
 Erich,Bitler,Bodine,12,32658020,365,365,87
-Montgomery,Brown,Carver,12,31536947,942,941,-14
+Montgomery,Brown,Carver,12,31536947,941,941,-14
 Samir,Bunn,Bodine,11,32711538,592,592,592
 Kaiden,Calamese,Workshop,12,31705366,629,629,9
 Caleb,Camilo,Swenson,0,32871402,176,176,-52
 David,Caseiro,Central,11,31481952,1595,1595,96
 Horace,Chen,Bodine,10,32434146,419,419,20
 Thomas,Chen,Masterman,10,32711989,971,971,23
-Vincent,Chen,Central,12,31877653,1478,1502,24
+Vincent,Chen,Central,12,31877653,1502,1502,24
 Areeb,Chowdhury,Northeast,12,32245604,958,958,-85
 Thomas,Curran,Carver,10,31541412,921,921,-2
 Culbreth,Cuttino,Lincoln,10,32891453,0,100,100
@@ -46,23 +46,23 @@ Sophia,Kuan,Palumbo,12,16182355,954,954,-27
 Guanyang,Li,Washington,10,32885929,0,296,296
 Giberson,Lilliana,Lincoln,10,32891436,0,100,100
 Guerrero,Pion Limbert,Lincoln,11,32885952,0,448,448
-Kirby,Lin,Central,12,16798007,2027,2014,4
-Qixin,Lin,Central,12,30757702,1762,1792,30
+Kirby,Lin,Central,12,16798007,2012,2014,4
+Qixin,Lin,Central,12,30757702,1792,1792,30
 Zaybrien,Lollie,Mastbaum,10,32833855,225,225,-284
-Amauris,Lopez,Lincoln,10,30959547,171,167,-33
+Amauris,Lopez,Lincoln,10,30959547,167,167,-33
 Terence,Lynch-Alexander,Masterman,10,30818746,402,402,73
 Jacky,Ma,Carver,10,32711887,818,818,61
 Mabinti,Mansaray,Palumbo,11,16840095,1334,1334,-4
 Dominic,Martinez,Swenson,11,32108834,617,617,45
 Jariel,Martinez,Swenson,12,32658285,683,683,-47
-Bryan,Martinez-Hernandez,Palumbo,11,31697174,1477,1473,-9
+Bryan,Martinez-Hernandez,Palumbo,11,31697174,1473,1473,-9
 Fredrick,Mccarty,Swenson,10,32891549,320,320,320
-Bernadette,Mccourt,New Foundations,10,32891470,527,637,110
+Bernadette,Mccourt,New Foundations,10,32891470,637,637,110
 Darren,Milch,Central,12,16843885,1528,1528,2
 Joseph,Miller,New Foundations,12,32246328,657,657,-144
 Ahmed,Mohamed,New Foundations,12,32754585,1007,1007,1007
 Sameer,Mohammad,Washington,12,31685836,1741,1741,24
-Sabastian,Moura,Bodine,10,32711609,450,449,449
+Sabastian,Moura,Bodine,10,32711609,449,449,449
 Sheikh,Nabih Uddin,Carver,11,32246336,685,685,-2
 Even,Ni,Northeast,12,31705525,1392,1392,11
 Christopher,Nicas,Swenson,11,31705869,679,679,-31
@@ -78,10 +78,10 @@ Elmer,Rodriguez,New Foundations,11,32246310,214,214,114
 Ewdi,Rosario,Central,12,30959867,1157,1157,34
 Jacob,Rosenbach,SLA,12,32749855,944,944,-80
 Aidan,Ruff,New Foundations,10,32891487,708,708,708
-Olivia,Ryerson,Masterman,9,16727082,1721,1725,4
+Olivia,Ryerson,Masterman,9,16727082,1725,1725,4
 Ebin,Sajan,Washington,10,32885885,0,294,294
 Brett,Schubert,Swenson,11,32108806,503,503,-58
-Timur,Shomurodov,Washington,12,32711944,1619,1627,-8
+Timur,Shomurodov,Washington,12,32711944,1626,1627,-8
 Luis,Sosa,Swenson,10,32891559,0,328,328
 Arianna,Stallworth,Bodine,12,32711556,0,266,266
 Alex,Tang,Palumbo,10,31481792,915,915,-2
@@ -89,17 +89,17 @@ Calvin,Thomas-Cubero,Boys Latin,11,32711624,511,511,511
 Brandon,Tran,Palumbo,12,30512382,1671,1671,32
 Christopher,Vasquez-Reyes,Boys Latin,11,32754668,0,382,382
 Nafiys,Walters,Boys Latin,12,32885835,0,608,608
-Calvin,Jiarui Wang,Central,12,30757348,1939,1983,1
+Calvin,Jiarui Wang,Central,12,30757348,1983,1983,1
 Rowe,Weber,Bodine,12,32711579,495,495,495
 Yehuda,Weinmartin,SLA,11,32658427,1080,1080,35
-Owen,Wharton,Carver,12,17172035,633,632,-2
+Owen,Wharton,Carver,12,17172035,632,632,-2
 Bryan,Widjaja,Palumbo,12,30476629,818,818,-5
 Justin,Wu,Washington,10,32658438,784,784,6
 Pinshuai,Xie,Northeast,10,32711999,724,724,-37
 Alston,Yan,Washington,12,31686374,763,763,-10
-Nina,Yang,Palumbo,10,32127064,1149,1150,81
+Nina,Yang,Palumbo,10,32127064,1150,1150,81
 Shydir,Yates,Mastbaum,12,31705655,740,740,51
 Eric,Yeung,Masterman,12,30868847,1735,1735,21
 Ethan,Yeung,Masterman,10,32026657,970,970,11
-Anson,Zhang,Masterman,11,32190285,1082,1079,-3
-Yuxuan,Zhang,SLA,11,32891514,544,543,543
+Anson,Zhang,Masterman,11,32190285,1079,1079,-3
+Yuxuan,Zhang,SLA,11,32891514,543,543,543
