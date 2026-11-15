@@ -5,9 +5,9 @@ from .player import Player
 class USCF_Service:
 
     @staticmethod
-    def _safe_get(url, max_retries=8):
+    def _safe_get(url, max_retries=3):
 
-        delay = 1.0
+        delay = 0.5
         for attempt in range(max_retries):
             time.sleep(delay)
             
