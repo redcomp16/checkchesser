@@ -3,23 +3,26 @@ import time
 from .player import Player
 
 class USCF_Service:
+    _session = requests.Session()
+    _session.headers.update({
+        "User-Agent": "CheckChesser-RatingUpdater/1.0 (GitHub Actions Automated Sync)"
+    })
 
     @staticmethod
-    def _safe_get(url, max_retries=3):
-
-        delay = 0.5
+    def _safe_get(url, max_retries=5):
+        time.sleep(1.5)
+        
         for attempt in range(max_retries):
-            time.sleep(delay)
-            
             try:
-                response = requests.get(url, timeout=10)
+                response = USCF_Service._session.get(url, timeout=15)
                 
                 if response.status_code == 200:
                     return response.json()
                 
                 if response.status_code == 429:
-                    wait_time = int(response.headers.get("Retry-After", 2 ** (attempt + 1)))
-                    print(f"Rate limited (429). Waiting {wait_time}s before retry {attempt + 1}...")
+                    retry_after = response.headers.get("Retry-After")
+                    wait_time = int(retry_after) if (retry_after and retry_after.isdigit()) else (30 * (2 ** attempt))
+                    print(f"Rate limited (429) for {url}. Waiting {wait_time}s before retry {attempt + 1}...")
                     time.sleep(wait_time)
                     continue
                 
@@ -29,6 +32,7 @@ class USCF_Service:
                 if attempt == max_retries - 1:
                     print(f"Request failed after {max_retries} attempts: {e}")
                     return None
+                time.sleep(5)
                 continue
         return None
 
